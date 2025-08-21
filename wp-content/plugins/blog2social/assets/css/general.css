@@ -249,8 +249,8 @@ th {
 @font-face {
     font-family: 'Glyphicons Halflings';
 
-    src: url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.eot');
-    src: url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.eot#iefix') format('embedded-opentype'), url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    src: url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.eot');
+    src: url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.eot#iefix') format('embedded-opentype'), url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
     position: relative;
@@ -8127,6 +8127,10 @@ CSS CheckBOX
 
 .b2s-margin-top-5{
     margin-top: 5px !important;
+}
+
+.b2s-margin-top-0{
+    margin-top: 0px !important;
 }
 
 .b2s-margin-top-8{

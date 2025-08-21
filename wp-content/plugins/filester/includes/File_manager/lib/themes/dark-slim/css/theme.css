@@ -1037,11 +1037,11 @@ input[type="radio"]{
 	font-family: 'elfinder';
 	font-style: normal;
 	font-weight: normal;
-	src: 	url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.woff2') format('woff2'),
-			url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.woff') format('woff'),
-			url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.svg') format('svg'),
-			url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.ttf') format('truetype'),
-			url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.eot') format('embedded-opentype');
+	src: 	url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.woff2') format('woff2'),
+			url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.woff') format('woff'),
+			url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.svg') format('svg'),
+			url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.ttf') format('truetype'),
+			url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/dark-slim/img/elfinder.eot') format('embedded-opentype');
 }
 
 .elfinder .ui-icon,

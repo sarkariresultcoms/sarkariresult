@@ -1,10 +1,10 @@
-=== Simply Static - The WordPress Static Site Generator ===
+=== Simply Static - The Static Site Generator ===
 Contributors: patrickposner
 Tags: static site generator, performance, security, jamstack
 Requires at least: 6.2
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag:  3.3.3.2
+Stable tag:  3.4.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -178,7 +178,7 @@ and much more.
 
 = Get the Pro version =
 
-You can get the pro version [here](https://simplystatic.com/pro/).
+You can get the pro version [here](https://simplystatic.com/pricing/).
 
 = Simply Static Course =
 
@@ -260,6 +260,52 @@ Simply Static creates a static copy of your WordPress site that is intended to b
 3. Diagnostics
 
 == Changelog ==
+
+= 3.4.2.1 =
+
+* Smart Crawl -> Enhanced Crawl (thanks WPMUDEV for the copyright claim)
+
+= 3.4.2 =
+
+* fixed integration loading in admin settings
+* modified readme to comply with .org trademark violation (...)
+
+= 3.4.1 =
+
+* improved sanitization for saving crawlers
+* dedicated function to fetch crawlers to reduce impact on useEffect
+* improved defaultState to avoid display default options via Settings
+
+= 3.4.0 =
+
+* introduced Smart Crawl
+* preserve URL parameters on creating redirect files
+* removed deprecated plugin scan task
+* removed download attribute from ZIP download link (playground)
+* introduced improved export log (search/filter/sort)
+
+= 3.3.3.5 =
+
+* fixed typo (placehodler vs. placeholder)
+* better handling for import maps when using offline mode
+* avoid error if empty DOM returned (Yoast SEO integration)
+* improved ZIP URL handling with WP_CONTENT_DIR and WP_CONTENT_URL set
+* use backticks when creating tables to avoid AWS Aurora MySQL
+* exclude robots.txt from .txt exclusion
+* added method to delete single record from DB table
+* preserve URL parameters on export (UTM tags, generic URL parameters, version numbers for JS/CSS)
+
+= 3.3.3.4 =
+
+* preserve JSON inside attributes (Elementor, Cornerstone and others)
+
+= 3.3.3.3 =
+
+* adding a hidden delay integration to auto-pause between exports (disabled by default)
+* refactored UTF-8 handling to properly encode Arabic characters and German Umlauts
+* added support for conditional comments being extracted without modifying the structure
+* improved "feed" and "debug" checks inside exclude handler with regex to avoid false-positives
+* added custom Elementor widget for search
 
 = 3.3.3.2 =
 

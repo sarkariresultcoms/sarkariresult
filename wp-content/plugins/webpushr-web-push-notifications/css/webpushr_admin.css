@@ -1153,7 +1153,7 @@ li.webpushr_13fw3_woo_menu_heading {
 .webpushr_13fw3_loading_container{position: relative;}
 .webpushr_13fw3_container.webpushr_13fw3_loading_container:before {
   content:  ' Redirecting...';
-  background: url('https://sarkariresultcoms.github.io/sarkariresult/wp-content/plugins/webpushr-web-push-notifications/images/webpushr_loader.svg')  no-repeat;
+  background: url('https://sarkariresultcoms.github.io/wp-content/plugins/webpushr-web-push-notifications/images/webpushr_loader.svg')  no-repeat;
   background-position: calc(50% - 75px) 50%;
   z-index: 2;
   position: absolute;
