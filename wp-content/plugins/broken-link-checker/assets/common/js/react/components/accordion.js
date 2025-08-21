@@ -1,4 +1,5 @@
-import React from 'react';
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>import React from 'react';
 import {Row} from "./grid";
 
 require('@wpmudev/shared-ui/dist/js/_src/accordion');
@@ -8,40 +9,29 @@ export default function Accordion(props) {
     let classes = props.classes !== undefined ? props.classes : '';
     let accordionData = props.accordionData !== undefined ? props.accordionData : '';
     let accordionIcon = props.accordionIcon !== undefined ? props.accordionIcon : 'sui-icon-chevron-down';
-    let active = props.active !== undefined && props.active ? true : false;
+    let active = props.active !== undefined &amp;&amp; props.active ? true : false;
 
     //SUI.suiAccordion( document.querySelector(`#${id}.sui-accordion`) );
     SUI.suiAccordion( document.querySelector(`#${id}`) );
 
-    return <table
-        {... id ? {id} : {}}
-        className={`sui-table sui-accordion ${classes}`}
-        >
+    return </p><table id : classname="{`sui-table" sui-accordion>
         <tbody>
         {
-            ( accordionData.length > 0 ) &&
+            ( accordionData.length &gt; 0 ) &amp;&amp;
             accordionData.map(
-                (accordionItem, i) => {
+                (accordionItem, i) =&gt; {
                     return [
-                        <tr
-                            key={`${accordionItem.id}-title`}
-                            id={`${accordionItem.id}-title`}
-                            className={`sui-accordion-item sui-accordion-item-head ${active ? 'sui-accordion-item--open' : ''}`}>
+                        <tr key="{`${accordionItem.id}-title`}" id="{`${accordionItem.id}-title`}" classname="{`sui-accordion-item" sui-accordion-item-head :>
 
-                            <td className="sui-table-item-title">{accordionItem.title}
-                                <span
-                                    className="sui-accordion-open-indicator">
-                                    <span className={accordionIcon} aria-hidden="true"></span>
+                            <td classname="sui-table-item-title">{accordionItem.title}
+                                <span classname="sui-accordion-open-indicator">
+                                    <span classname="{accordionIcon}" aria-hidden="true"></span>
                                 </span>
                             </td>
                         </tr>,
-                        <tr
-                            key={`${accordionItem.id}-content`}
-                            id={`${accordionItem.id}-content`}
-                            className={`sui-accordion-item-content ${active ? 'sui-accordion-item--open' : ''}`}
-                        >
+                        <tr key="{`${accordionItem.id}-content`}" id="{`${accordionItem.id}-content`}" classname="{`sui-accordion-item-content" :>
                             <td>
-                                <div className="accordion-content" tabIndex={i}>
+                                <div classname="accordion-content" tabindex="{i}">
                                     {accordionItem.description}
                                 </div>
                             </td>
@@ -52,4 +42,4 @@ export default function Accordion(props) {
         }
         </tbody>
     </table>
-}
+}</body></html>

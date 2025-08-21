@@ -1,4 +1,5 @@
-/**
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/**
  * External dependencies
  */
 import { isEmpty } from 'lodash'
@@ -16,75 +17,55 @@ export default function List( { headings = {}, onHeadingUpdate = {}, edit = {}, 
 	}
 
 	return (
-		<>
-			{ headings.map( ( heading ) => {
-				if ( isSave && heading.heading.disable ) {
+		&lt;&gt;
+			{ headings.map( ( heading ) =&gt; {
+				if ( isSave &amp;&amp; heading.heading.disable ) {
 					return false
 				}
 
 				const { content, link, disable, key } = heading.heading
 				const TagName = 'div' === ListStyle ? 'div' : 'li'
 				return (
-					<TagName key={ key } className={ disable ? 'disabled' : '' }>
+					<tagname key="{" classname="{" disable :>
 						{
-							isSave &&
-							<a href={ link }>
+							isSave &amp;&amp;
+							<a href="https://sarkariresultcoms.github.io/wp-content/plugins/seo-by-rank-math/includes/modules/schema/blocks/toc/assets/src/%7B" link>
 								{ content }
 							</a>
 						}
 						{
-							! isSave &&
-							<RichText
-								tagName="a"
-								value={ content }
-								allowedFormats={ [] }
-								onChange={ ( newContent ) => onHeadingUpdate( newContent, key, true ) }
+							! isSave &amp;&amp;
+							<richtext tagname="a" value="{" content allowedformats="{" onchange="{" newcontent> onHeadingUpdate( newContent, key, true ) }
 								placeholder={ __( 'Heading text', 'rank-math' ) }
-							/>
+							/&gt;
 						}
 						{
-							heading.children &&
-							<ListStyle>
-								<List
-									headings={ heading.children }
-									onHeadingUpdate={ onHeadingUpdate }
-									edit={ edit }
-									toggleEdit={ toggleEdit }
-									hideHeading={ hideHeading }
-									ListStyle={ ListStyle }
-									isSave={ isSave }
-								/>
-							</ListStyle>
+							heading.children &amp;&amp;
+							<liststyle>
+								<list headings="{" heading.children onheadingupdate="{" edit="{" toggleedit="{" hideheading="{" liststyle="{" issave="{"></list>
+							</liststyle>
 						}
 						{
-							key === edit &&
-							<TextControl
-								placeholder={ __( 'Heading Link', 'rank-math' ) }
-								value={ link }
-								onChange={ ( newLink ) => onHeadingUpdate( newLink, key ) }
-							/>
+							key === edit &amp;&amp;
+							<textcontrol placeholder="{" __ link value="{" onchange="{" newlink> onHeadingUpdate( newLink, key ) }
+							/&gt;
 						}
 						{
-							! isSave &&
-							<span className="rank-math-block-actions">
-								<Button
-									icon={ edit === key ? 'saved' : 'admin-links' }
-									className="rank-math-item-visbility"
-									onClick={ () => toggleEdit( edit === key ? false : key ) }
+							! isSave &amp;&amp;
+							<span classname="rank-math-block-actions">
+								<button icon="{" edit="==" key : classname="rank-math-item-visbility" onclick="{"> toggleEdit( edit === key ? false : key ) }
 									title={ __( 'Edit Link', 'rank-math' ) }
-								/>
+								/&gt;
 
-								<Button
-									className="rank-math-item-delete"
-									icon={ ! disable ? 'visibility' : 'hidden' }
-									onClick={ () => hideHeading( ! disable, key ) }
+								<button classname="rank-math-item-delete" icon="{" disable : onclick="{"> hideHeading( ! disable, key ) }
 									title={ __( 'Hide', 'rank-math' ) }
-								/>
-							</span>
+								/&gt;
+							</button></button></span>
 						}
-					</TagName>
+					</textcontrol></richtext></tagname>
 				)
 			} ) }
-		</>
+		&gt;
 	)
 }
+</p></body></html>

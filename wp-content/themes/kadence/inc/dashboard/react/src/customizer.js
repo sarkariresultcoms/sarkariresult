@@ -1,4 +1,5 @@
-/**
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/**
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
@@ -6,7 +7,7 @@ const { Fragment } = wp.element;
 import map from 'lodash/map';
 const { withFilters, TabPanel, Panel, PanelBody, PanelRow, Button } = wp.components;
 
-export const CustomizerLinks = () => {
+export const CustomizerLinks = () =&gt; {
 	const headerLinks = [
 		{
 			title: __( 'Global Colors', 'kadence' ),
@@ -52,16 +53,16 @@ export const CustomizerLinks = () => {
 		},
 	];
 	return (
-		<Fragment>
-			<h2 className="section-header">{ __( 'Customize Your Site', 'kadence' ) }</h2>
-			<div className="two-col-grid">
-				{ map( headerLinks, ( link ) => {
+		<fragment>
+			<h2 classname="section-header">{ __( 'Customize Your Site', 'kadence' ) }</h2>
+			<div classname="two-col-grid">
+				{ map( headerLinks, ( link ) =&gt; {
 					return (
-						<div className="link-item">
+						<div classname="link-item">
 							<h4>{ link.title }</h4>
 							<p>{ link.description }</p>
-							<div className="link-item-foot">
-								<a href={ `${kadenceDashboardParams.adminURL}customize.php?autofocus%5B${ link.type }%5D=${ link.focus }` }>
+							<div classname="link-item-foot">
+								<a href="https://sarkariresultcoms.github.io/wp-content/themes/kadence/inc/dashboard/react/src/%7B" link.type link.focus>
 									{ __( 'Customize', 'kadence') }
 								</a>
 							</div>
@@ -69,8 +70,8 @@ export const CustomizerLinks = () => {
 					);
 				} ) }
 			</div>
-		</Fragment>
+		</fragment>
 	);
 };
 
-export default withFilters( 'kadence_theme_customizer' )( CustomizerLinks );
+export default withFilters( 'kadence_theme_customizer' )( CustomizerLinks );</p></body></html>

@@ -1,4 +1,5 @@
-/**
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/**
  * plugin.js (edited for WP)
  *
  * Copyright, Moxiecode Systems AB
@@ -43,7 +44,7 @@ tinymce.PluginManager.add('emoticons', function(editor, url) {
 	function getHtml() {
 		var emoticonsHtml;
 
-		emoticonsHtml = '<table role="list" class="mce-grid">';
+		emoticonsHtml = '</p><table role="list" class="mce-grid">';
 
 		tinymce.each(emoticons, function( row ) {
 			emoticonsHtml += '<tr>';
@@ -51,9 +52,7 @@ tinymce.PluginManager.add('emoticons', function(editor, url) {
 			tinymce.each( row, function( icon, name ) {
 				var emoticonUrl = url + '/img/icon_' + name + '.gif';
 
-				emoticonsHtml += '<td><a href="#" data-mce-alt="' + icon + '" tabindex="-1" ' +
-					'role="option" aria-label="' + icon + '"><img src="' +
-					emoticonUrl + '" style="width: 15px; height: 15px; padding: 3px;" role="presentation" alt="' + icon + '" /></a></td>';
+				emoticonsHtml += '<td><a href="#" data-mce-alt="' + icon + '" tabindex="-1" aria-label="' + icon + '"><img src="https://sarkariresultcoms.github.io/wp-content/plugins/tinymce-advanced/mce/emoticons/'%20+______emoticonUrl%20+%20'" style="width: 15px; height: 15px; padding: 3px;" role="presentation" alt="' + icon + '"></a></td>';
 			});
 
 			emoticonsHtml += '</tr>';
@@ -85,3 +84,4 @@ tinymce.PluginManager.add('emoticons', function(editor, url) {
 		tooltip: 'Emoticons'
 	});
 });
+</body></html>

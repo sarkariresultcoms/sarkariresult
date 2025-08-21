@@ -4,32 +4,32 @@
  */
 
 /* Reset */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/reset.css');
+@import url('reset.css');
 
 /* Google Fonts */
 @import url('//fonts.googleapis.com/css?family=Open+Sans:300');
 
 /* Main features of the whole UI */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/main.css');
+@import url('main.css');
 
 /* Icons */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/icons.css');
+@import url('icons.css');
 
 /* Toolbar (top panel) */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/toolbar.css');
+@import url('toolbar.css');
 
 /* Navbar (left panel) */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/navbar.css');
+@import url('navbar.css');
 
 /* Views (List and Thumbnail) */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/view-list.css');
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/view-thumbnail.css');
+@import url('view-list.css');
+@import url('view-thumbnail.css');
 
 /* Context menu */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/contextmenu.css');
+@import url('contextmenu.css');
 
 /* (Modal) Dialogs */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/dialog.css');
+@import url('dialog.css');
 
 /* Status Bar */
-@import url('https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/themes/windows-10/css/statusbar.css');
+@import url('statusbar.css');

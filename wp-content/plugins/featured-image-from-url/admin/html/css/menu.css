@@ -49,12 +49,12 @@
     overflow: hidden;
     width: 72px;
     height: 24px;
-    background: url("https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/images/onoff.jpg") 0 0 no-repeat;
+    background: url("../../images/onoff.jpg") 0 0 no-repeat;
     text-align: center !important;
 }
 
 .toggleoff {
-    background: url("https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/images/onoff.jpg") -72px 0 no-repeat;
+    background: url("../../images/onoff.jpg") -72px 0 no-repeat;
 }
 
 th, td {

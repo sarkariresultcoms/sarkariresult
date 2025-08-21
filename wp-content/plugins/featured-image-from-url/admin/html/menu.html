@@ -117,7 +117,7 @@
                                                 <input id="fifu_input_html_cpt" type="text" name="fifu_input_html_cpt" style="width:865px" value="&lt;?php echo $html_cpt; ?&gt;" placeholder="post,page,product">
                                             </form>                                            
                                             <div style="position: relative; left:5px; top: 5px">
-                                                <?php $fifu['auto']['cpt']['found']() ?><i><?php echo fifu_get_post_types_str() ?></i>
+                                                <?php $fifu['auto']['cpt']['found']() ?> <i><?php echo fifu_get_post_types_str() ?></i>
                                             </div>
                                         </th>
                                     </tr>
@@ -967,7 +967,7 @@ anysiteyoureallyhate.com"></textarea>
                             </form>
 
                             <div style="position: relative; left:5px; top: 5px">
-                                <?php $fifu['auto']['cpt']['found']() ?><i><?php echo fifu_get_post_types_str() ?></i>
+                                <?php $fifu['auto']['cpt']['found']() ?> <i><?php echo fifu_get_post_types_str() ?></i>
                             </div>
                         </div>
                         <div id="tabs-2">
@@ -1094,7 +1094,7 @@ anysiteyoureallyhate.com"></textarea>
                             </form>
 
                             <div style="position: relative; left:5px; top: 5px">
-                                <?php $fifu['auto']['cpt']['found']() ?><i><?php echo fifu_get_post_types_str() ?></i>
+                                <?php $fifu['auto']['cpt']['found']() ?> <i><?php echo fifu_get_post_types_str() ?></i>
                             </div>
                         </div>
                     </div>
@@ -2059,7 +2059,7 @@ anysiteyoureallyhate.com"></textarea>
 
                     <div class="greybox" id="grad2">
                         <div id="tabsApi">
-                            <ul style="width: 250px;">
+                            <ul style="width:25%;">
                                 <li><a href="#tabs-1"><?php $fifu['api']['tab']['endpoints']() ?></a></li>
                                 <li><a href="#tabs-2"><?php $fifu['api']['tab']['custom']() ?></a></li>
                                 <li><a href="#tabs-3"><?php $fifu['api']['tab']['product']() ?></a></li>
@@ -2071,7 +2071,7 @@ anysiteyoureallyhate.com"></textarea>
                                 <li><a href="#tabs-5"><?php $fifu['api']['tab']['post']() ?></a></li>
                                 <li><a href="#tabs-9"><?php $fifu['api']['tab']['documentation']() ?></a></li>
                             </ul>
-                            <div id="tabs-1" style="width:780px">
+                            <div id="tabs-1" style="width:70%">
                                 <table style="text-align:left; width:100%">
                                     <tr class="color">
                                         <th>			
@@ -2166,10 +2166,12 @@ anysiteyoureallyhate.com"></textarea>
                                 </table>
                             </div>
 
-                            <div id="tabs-2" style="width:780px">
+                            <div id="tabs-2" style="width:70%">
                                 <table style="text-align:left; width:100%">
                                     <tr class="color">
-                                        <th></th>
+                                        <th>
+                                            <b><?php $fifu['import']['custom']['general']() ?> (WordPress)</b>
+                                        </th>
                                         <th>
                                             <b><?php $fifu['api']['custom']['key']() ?></b>
                                         </th>
@@ -2199,28 +2201,6 @@ anysiteyoureallyhate.com"></textarea>
                                     </tr>
                                     <tr class="color">
                                         <th>
-                                            <?php $fifu['api']['custom']['images']() ?>
-                                        </th>
-                                        <th>
-                                            fifu_list_url
-                                        </th>
-                                        <th>
-                                            |
-                                        </th>
-                                    </tr>
-                                    <tr class="color">
-                                        <th>
-                                            <?php $fifu['api']['custom']['titles']() ?>
-                                        </th>
-                                        <th>
-                                            fifu_list_alt
-                                        </th>
-                                        <th>
-                                            |
-                                        </th>
-                                    </tr>
-                                    <tr class="color">
-                                        <th>
                                             <?php $fifu['api']['custom']['video']() ?>
                                         </th>
                                         <th>
@@ -2231,18 +2211,7 @@ anysiteyoureallyhate.com"></textarea>
                                     </tr>
                                     <tr class="color">
                                         <th>
-                                            <?php $fifu['api']['custom']['videos']() ?>
-                                        </th>
-                                        <th>
-                                            fifu_list_video_url
-                                        </th>
-                                        <th>
-                                            |
-                                        </th>
-                                    </tr>
-                                    <tr class="color">
-                                        <th>
-                                            <?php $fifu['api']['custom']['slider']() ?>
+                                            <?php $fifu['import']['custom']['slider']() ?>
                                         </th>
                                         <th>
                                             fifu_slider_list_url
@@ -2251,78 +2220,130 @@ anysiteyoureallyhate.com"></textarea>
                                             |
                                         </th>
                                     </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <table style="text-align:left; width:100%">
                                     <tr class="color">
                                         <th>
-                                            <?php $fifu['api']['custom']['isbn']() ?>
+                                            <b><?php $fifu['import']['custom']['general']() ?> (WooCommerce)</b>
+                                        </th>
+                                        <th>
+                                            <b><?php $fifu['api']['custom']['key']() ?></b>
+                                        </th>
+                                        <th>
+                                            <b><?php $fifu['word']['delimiter']() ?></b>
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['import']['custom']['images']() ?>
+                                        </th>
+                                        <th>
+                                            fifu_list_url
+                                        </th>
+                                        <th>
+                                            |
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['import']['custom']['titles']() ?>
+                                        </th>
+                                        <th>
+                                            fifu_list_alt
+                                        </th>
+                                        <th>
+                                            |
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['import']['custom']['videos']() ?>
+                                        </th>
+                                        <th>
+                                            fifu_list_video_url
+                                        </th>
+                                        <th>
+                                            |
+                                        </th>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <table style="text-align:left; width:100%">
+                                    <tr class="color">
+                                        <th>
+                                            <b><?php $fifu['import']['custom']['specific']() ?></b>
+                                        </th>
+                                        <th>
+                                            <b><?php $fifu['api']['custom']['key']() ?></b>
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['title']['isbn']() ?>
                                         </th>
                                         <th>
                                             fifu_isbn
                                         </th>
-                                        <th>
-                                        </th>
                                     </tr>
                                     <tr class="color">
                                         <th>
-                                            <?php $fifu['api']['custom']['asin']() ?>
+                                            <?php $fifu['title']['asin']() ?>
                                         </th>
                                         <th>
                                             fifu_asin
                                         </th>
-                                        <th>
-                                        </th>
                                     </tr>
                                     <tr class="color">
                                         <th>
-                                            <?php $fifu['api']['custom']['finder']() ?>
+                                            <?php $fifu['title']['finder']() ?>
                                         </th>
                                         <th>
                                             fifu_finder_url
                                         </th>
-                                        <th>
-                                        </th>
                                     </tr>
                                     <tr class="color">
                                         <th>
-                                            <?php $fifu['api']['custom']['redirection']() ?>
+                                            <?php $fifu['title']['redirection']() ?>
                                         </th>
                                         <th>
                                             fifu_redirection_url
-                                        </th>
-                                        <th>
                                         </th>
                                     </tr>
                                 </table>
                             </div>
 
-                            <div id="tabs-3" style="width:780px">
+                            <div id="tabs-3" style="width:70%">
                                 <div id="product-json" style="width:100%; height:275px; overflow:auto; border:1px solid #ddd; background:#f9f9f9; padding:10px;"></div>
                             </div>
 
-                            <div id="tabs-4" style="width:780px">
+                            <div id="tabs-4" style="width:70%">
                                 <div id="product-variation-json" style="width:100%; height:450px; overflow:auto; border:1px solid #ddd; background:#f9f9f9; padding:10px;"></div>
                             </div>
 
-                            <div id="tabs-5" style="width:780px">
+                            <div id="tabs-5" style="width:70%">
                                 <div id="post-json" style="width:100%; height:175px; overflow:auto; border:1px solid #ddd; background:#f9f9f9; padding:10px;"></div>
                             </div>
 
-                            <div id="tabs-6" style="width:780px">
+                            <div id="tabs-6" style="width:70%">
                                 <div id="product-category-json" style="width:100%; height:250px; overflow:auto; border:1px solid #ddd; background:#f9f9f9; padding:10px;"></div>
                             </div>
 
-                            <div id="tabs-7" style="width:780px">
+                            <div id="tabs-7" style="width:70%">
                                 <div id="product-variable-json" style="width:100%; height:590px; overflow:auto; border:1px solid #ddd; background:#f9f9f9; padding:10px;"></div>
                             </div>
 
-                            <div id="tabs-8" style="width:780px">
+                            <div id="tabs-8" style="width:70%">
                                 <div id="batch-product-json" style="width:100%; height:535px; overflow:auto; border:1px solid #ddd; background:#f9f9f9; padding:10px;"></div>
                             </div>
 
-                            <div id="tabs-10" style="width:780px">
+                            <div id="tabs-10" style="width:70%">
                                 <div id="batch-category-json" style="width:100%; height:535px; overflow:auto; border:1px solid #ddd; background:#f9f9f9; padding:10px;"></div>
                             </div>
 
-                            <div id="tabs-9" style="width:780px">
+                            <div id="tabs-9" style="width:70%">
 
                                 <table style="text-align:left; width:100%">
                                     <tr class="color">
@@ -4583,6 +4604,7 @@ anysiteyoureallyhate.com"></textarea>
                                 <table style="text-align:left; width: 100%;">
                                     <tr class="color">
                                         <th>
+                                            <b><?php $fifu['import']['custom']['general']() ?></b>
                                         </th>
                                         <th>
                                             <b><?php $fifu['import']['custom']['key']() ?></b>
@@ -4636,46 +4658,6 @@ anysiteyoureallyhate.com"></textarea>
                                     </tr>
                                     <tr class="color">
                                         <th>
-                                            <?php $fifu['import']['custom']['isbn']() ?>
-                                        </th>
-                                        <th>
-                                            fifu_isbn
-                                        </th>
-                                        <th>
-                                        </th>
-                                    </tr>
-                                    <tr class="color">
-                                        <th>
-                                            <?php $fifu['import']['custom']['asin']() ?>
-                                        </th>
-                                        <th>
-                                            fifu_asin
-                                        </th>
-                                        <th>
-                                        </th>
-                                    </tr>
-                                    <tr class="color">
-                                        <th>
-                                            <?php $fifu['import']['custom']['finder']() ?>
-                                        </th>
-                                        <th>
-                                            fifu_finder_url
-                                        </th>
-                                        <th>
-                                        </th>
-                                    </tr>
-                                    <tr class="color">
-                                        <th>
-                                            <?php $fifu['import']['custom']['redirection']() ?>
-                                        </th>
-                                        <th>
-                                            fifu_redirection_url
-                                        </th>
-                                        <th>
-                                        </th>
-                                    </tr>
-                                    <tr class="color">
-                                        <th>
                                             <?php $fifu['import']['custom']['iframes']() ?>
                                         </th>
                                         <th>
@@ -4683,6 +4665,50 @@ anysiteyoureallyhate.com"></textarea>
                                         </th>
                                         <th>
                                             |
+                                        </th>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <table style="text-align:left; width: 100%;">
+                                    <tr class="color">
+                                        <th>
+                                            <b><?php $fifu['import']['custom']['specific']() ?></b>
+                                        </th>
+                                        <th>
+                                            <b><?php $fifu['import']['custom']['key']() ?></b>
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['title']['isbn']() ?>
+                                        </th>
+                                        <th>
+                                            fifu_isbn
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['title']['asin']() ?>
+                                        </th>
+                                        <th>
+                                            fifu_asin
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['title']['finder']() ?>
+                                        </th>
+                                        <th>
+                                            fifu_finder_url
+                                        </th>
+                                    </tr>
+                                    <tr class="color">
+                                        <th>
+                                            <?php $fifu['title']['redirection']() ?>
+                                        </th>
+                                        <th>
+                                            fifu_redirection_url
                                         </th>
                                     </tr>
                                 </table>

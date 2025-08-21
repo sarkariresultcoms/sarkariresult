@@ -1,9 +1,10 @@
-/**
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/**
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
 import { withFilters } from '@wordpress/components';
-const lockIcon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+const lockIcon = <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50">
 <path d="M34 23h-2v-4c0-3.9-3.1-7-7-7s-7 3.1-7 7v4h-2v-4c0-5 4-9 9-9s9 4 9 9v4z"></path>
 <path d="M33 40H17c-1.7 0-3-1.3-3-3V25c0-1.7 1.3-3 3-3h16c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3zM17 24c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V25c0-.6-.4-1-1-1H17z"></path>
 <circle cx="25" cy="28" r="2"></circle>
@@ -14,7 +15,7 @@ const lockIcon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
  */
 import map from 'lodash/map';
 
-export const ProModules = () => {
+export const ProModules = () =&gt; {
 	const proLinks = [
 		{
 			title: __( 'Header Addons', 'kadence' ),
@@ -68,17 +69,17 @@ export const ProModules = () => {
 		},
 	];
 	return (
-		<>
-			<h2 className="section-header">{ __( 'Do more with the Kadence Pro Addon', 'kadence' ) }</h2>
-			<div className="two-col-grid">
-				{ map( proLinks, ( link ) => {
+		&lt;&gt;
+			</p><h2 classname="section-header">{ __( 'Do more with the Kadence Pro Addon', 'kadence' ) }</h2>
+			<div classname="two-col-grid">
+				{ map( proLinks, ( link ) =&gt; {
 					return (
-						<div className="link-item locked-item">
-							<span className="lock-icon">{ lockIcon }</span>
+						<div classname="link-item locked-item">
+							<span classname="lock-icon">{ lockIcon }</span>
 							<h4>{ link.title }</h4>
 							<p>{ link.description }</p>
-							<div className="link-item-foot">
-								<a href={ `${kadenceDashboardParams.proURL}&utm_campaign=${ link.setting }` } target="_blank">
+							<div classname="link-item-foot">
+								<a href="https://sarkariresultcoms.github.io/wp-content/themes/kadence/inc/dashboard/react/src/%7B" link.setting target="_blank">
 									{ __( 'Learn More', 'kadence') }
 								</a>
 							</div>
@@ -86,8 +87,8 @@ export const ProModules = () => {
 					);
 				} ) }
 			</div>
-		</>
+		&gt;
 	);
 };
 
-export default withFilters( 'kadence_theme_pro_modules' )( ProModules );
+export default withFilters( 'kadence_theme_pro_modules' )( ProModules );</body></html>

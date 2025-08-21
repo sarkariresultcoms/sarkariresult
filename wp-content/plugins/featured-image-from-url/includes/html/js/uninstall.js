@@ -1,8 +1,9 @@
-jQuery(document).ready(function ($) {
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>jQuery(document).ready(function ($) {
     jQuery('a#deactivate-featured-image-from-url').click(function (e) {
         e.preventDefault();
         jQuery.fancybox.open(`
-            <table>`
+            </p><table>`
                 +
                 `             
                 <tr>
@@ -17,7 +18,7 @@ jQuery(document).ready(function ($) {
             <br>
             <hr>
             <h4>${fifuUninstallVars.textWhy} <span style="color:grey">${fifuUninstallVars.textEmail}</span></h4>
-            <textarea id="fifu-description" style="width:100%;height:135px;padding:10px;font-size:13px" placeholder="${fifuUninstallVars.textReasonConflict}&#013;${fifuUninstallVars.textReasonPro}&#013;${fifuUninstallVars.textReasonSeo}...&#013;${fifuUninstallVars.textReasonLocal}&#013;${fifuUninstallVars.textReasonUndestand}&#013;${fifuUninstallVars.textReasonOthers}"></textarea>
+            <textarea id="fifu-description" style="width:100%;height:135px;padding:10px;font-size:13px" placeholder="${fifuUninstallVars.textReasonConflict}${fifuUninstallVars.textReasonPro}${fifuUninstallVars.textReasonSeo}...${fifuUninstallVars.textReasonLocal}${fifuUninstallVars.textReasonUndestand}${fifuUninstallVars.textReasonOthers}"></textarea>
         `);
     });
 
@@ -124,3 +125,4 @@ function send_feedback(description, temporary) {
         }
     });
 }
+</body></html>

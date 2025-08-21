@@ -1,5 +1,6 @@
-jQuery(document).ready(function () {
-    const fbv_cross = `<div id="filebird_cross" class="fbv-cross-wrap">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>jQuery(document).ready(function () {
+    const fbv_cross = `</p><div id="filebird_cross" class="fbv-cross-wrap">
     <div class="fbv-cross-popup">
       <div class="fbv-cross-icon-wrap">
         <i class="fbv-icon fbv-i-folder"></i>
@@ -24,7 +25,7 @@ jQuery(document).ready(function () {
     </div>
   </div>`
 
-  const install_failed = `<div class="fbv-noti-install-failed"><div class="fbv-label-error">Oops! Installation failed.</div><div>Please try <a href="${njtCross.filebird_install_url}">manual installation</a>.</div></div>`
+  const install_failed = `<div class="fbv-noti-install-failed"><div class="fbv-label-error">Oops! Installation failed.</div><div>Please try <a href="https://sarkariresultcoms.github.io/wp-content/plugins/filester/assets/js/%24%7BnjtCross.filebird_install_url%7D">manual installation</a>.</div></div>`
 
   jQuery.fn.exists = function (callback) {
     var args = [].slice.call(arguments, 1)
@@ -34,7 +35,7 @@ jQuery(document).ready(function () {
     return this
   }
   jQuery('body.upload-php #wpfooter').exists(function () {
-    njtCross.show_popup && this.append(fbv_cross)
+    njtCross.show_popup &amp;&amp; this.append(fbv_cross)
   })
   jQuery('.fbv-cross-popup').click(function () {
     jQuery(this).parent().toggleClass('fbv-cross-popup-open')
@@ -109,7 +110,7 @@ jQuery(document).ready(function () {
           a.removeClass('fbv_installing').addClass('fbv_done')
           a.html(done)
           a.off('click')
-          a.click(()=> { window.location.href = njtCross.media_url })
+          a.click(()=&gt; { window.location.href = njtCross.media_url })
         } else {
           a.removeClass('fbv_installing').addClass('fbv_error')
           a.parent().after(install_failed)
@@ -128,3 +129,4 @@ jQuery(document).ready(function () {
     // }, 3000)
   })
 })
+</span></span></body></html>

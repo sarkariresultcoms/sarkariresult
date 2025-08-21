@@ -1,4 +1,5 @@
-( function( $ ) {
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>( function( $ ) {
 	'use strict';
 	var $window = $( window ),
 		$document = $( document ),
@@ -49,7 +50,7 @@
 	} );
 	document.addEventListener('DOMContentLoaded', function () {
 		if ( navigator.userAgent.toLowerCase().indexOf('safari/') != -1 ) {
-			if ( navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+			if ( navigator.userAgent.toLowerCase().indexOf('chrome') &gt; -1) {
 			} else {
 				// Safari doesn't want to render the iframe... This hack at least makes it render although it's not idea because of the flash.
 				// $body.animate({
@@ -64,10 +65,10 @@
 			}
 		}
 		var hasSelectiveRefresh = (
-			'undefined' !== typeof wp &&
-			wp.customize &&
-			wp.customize.selectiveRefresh &&
-			wp.customize.widgetsPreview &&
+			'undefined' !== typeof wp &amp;&amp;
+			wp.customize &amp;&amp;
+			wp.customize.selectiveRefresh &amp;&amp;
+			wp.customize.widgetsPreview &amp;&amp;
 			wp.customize.widgetsPreview.WidgetPartial
 		);
 		if ( hasSelectiveRefresh ) {
@@ -294,7 +295,7 @@
 							}
 						}
 						if ( 'image' === background_type ) {
-							var imageValue = ( undefined !== newValue['desktop']['image'] && undefined !== newValue['desktop']['image']['url'] && '' !== newValue['desktop']['image']['url'] ? 'url(' + newValue['desktop']['image']['url'] + ')' : false );
+							var imageValue = ( undefined !== newValue['desktop']['image'] && undefined !== newValue['desktop']['image']['url'] && '' !== newValue['desktop']['image']['url'] ? 'url('https://sarkariresultcoms.github.io/wp-content/themes/kadence/inc/customizer/js/+ newValue['desktop']['image']['url'] + ')' : false );
 							if ( imageValue ) {
 								cssArray[ rule['media'] ][ selector ]['background-color'] = color_type;
 								cssArray[ rule['media'] ][ selector ]['background-image'] = imageValue;
@@ -333,7 +334,7 @@
 							}
 						}
 						if ( 'image' === background_type ) {
-							var imageValue = ( undefined !== newValue['tablet']['image'] && undefined !== newValue['tablet']['image']['url'] && '' !== newValue['tablet']['image']['url'] ? 'url(' + newValue['tablet']['image']['url'] + ')' : false );
+							var imageValue = ( undefined !== newValue['tablet']['image'] && undefined !== newValue['tablet']['image']['url'] && '' !== newValue['tablet']['image']['url'] ? 'url('https://sarkariresultcoms.github.io/wp-content/themes/kadence/inc/customizer/js/+ newValue['tablet']['image']['url'] + ')' : false );
 							if ( imageValue ) {
 								cssArray[ media_tablet ][ selector ]['background-color'] = color_type;
 								cssArray[ media_tablet ][ selector ]['background-image'] = imageValue;
@@ -372,7 +373,7 @@
 							}
 						}
 						if ( 'image' === background_type ) {
-							var imageValue = ( undefined !== newValue['mobile']['image'] && undefined !== newValue['mobile']['image']['url'] && '' !== newValue['mobile']['image']['url'] ? 'url(' + newValue['mobile']['image']['url'] + ')' : false );
+							var imageValue = ( undefined !== newValue['mobile']['image'] && undefined !== newValue['mobile']['image']['url'] && '' !== newValue['mobile']['image']['url'] ? 'url('https://sarkariresultcoms.github.io/wp-content/themes/kadence/inc/customizer/js/+ newValue['mobile']['image']['url'] + ')' : false );
 							if ( imageValue ) {
 								cssArray[ media_mobile ][ selector ]['background-color'] = color_type;
 								cssArray[ media_mobile ][ selector ]['background-image'] = imageValue;
@@ -1141,4 +1142,4 @@
 			window.kadence.initMobileToggleSub();
         }
 	});
-} )( jQuery );
+} )( jQuery );</style></p></body></html>

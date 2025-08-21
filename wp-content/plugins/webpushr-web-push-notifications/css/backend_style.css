@@ -102,7 +102,7 @@ div.dataTables_wrapper div.dataTables_filter label{float:left}
 }
 .optintype p{font-size:12px;}
 .prompt-background {
-    background-image: url('https://sarkariresultcoms.github.io/wp-content/plugins/webpushr-web-push-notifications/images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
 }
 .panel {
@@ -202,12 +202,12 @@ prompticon3{position: absolute !important;}
     border:1px solid #edf1fa;
 }
 .pushPreviewContents.windows{
-    background-image: url('https://sarkariresultcoms.github.io/wp-content/plugins/webpushr-web-push-notifications/images/windows_placeholder.jpg');
+    background-image: url('../images/windows_placeholder.jpg');
     background-position: center bottom;
 
 }
 .pushPreviewContents.mac{
-    background-image: url('https://sarkariresultcoms.github.io/wp-content/plugins/webpushr-web-push-notifications/images/mac_placeholder.jpg');
+    background-image: url('../images/mac_placeholder.jpg');
     background-position: center top;
 }
 
@@ -994,7 +994,7 @@ label em{font-size: 12px;}
     height: 40px;
     min-width: 40px;
     border-radius: 50%;
-    background: url('https://sarkariresultcoms.github.io/wp-content/plugins/webpushr-web-push-notifications/images/chrome-icon.png') 50% no-repeat #ccc;
+    background: url('../images/chrome-icon.png') 50% no-repeat #ccc;
 }
 .outer-cover .simple-block .text-block[data-v-45c87718] {
     padding: 0 0px 0 11px;
@@ -1105,7 +1105,7 @@ preview[data-v-a42e5b2c] {
     width: 300px;
     margin: 0 auto;
     height: 500px;
-    background-image: url('https://sarkariresultcoms.github.io/wp-content/plugins/webpushr-web-push-notifications/images/android_placeholder.jpg');
+    background-image: url('../images/android_placeholder.jpg');
     background-position: center top;
     background-size: 300px;
     background-repeat: no-repeat;    

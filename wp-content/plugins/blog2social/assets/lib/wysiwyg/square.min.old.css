@@ -1,5 +1,5 @@
 /*! SCEditor | (C) 2011-2022, Sam Clarke | sceditor.com/license */
-.sceditor-button div,div.sceditor-grip{background-image:url(https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/lib/wysiwyg/famfamfam.png);background-repeat:no-repeat;width:16px;height:16px}
+.sceditor-button div,div.sceditor-grip{background-image:url(famfamfam.png);background-repeat:no-repeat;width:16px;height:16px}
 .sceditor-button-youtube div{background-position:0 0}
 .sceditor-button-link div{background-position:0 -16px}
 .sceditor-button-unlink div{background-position:0 -32px}
@@ -108,7 +108,7 @@ div.sceditor-group:first-child{border-left:0}
 .sceditor-button.disabled:hover{margin:1px;border:0}.sceditor-button:active{background:#eee;border:1px solid #ccc}
 .sceditor-button.active:hover{background:#f8f8f8;border:1px solid #ddd}
 
-.sceditor-button-h1 div { background: url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/lib/wysiwyg/h1-button.png'); }
-.sceditor-button-h2 div { background: url('https://sarkariresultcoms.github.io/wp-content/plugins/blog2social/assets/lib/wysiwyg/h2-button.png'); }
+.sceditor-button-h1 div { background: url('h1-button.png'); }
+.sceditor-button-h2 div { background: url('h2-button.png'); }
 .sceditor-button-custom-image div { background-position:0 -416px }
 .sceditor-button-custom-emoji div { background-position:0 -480px }

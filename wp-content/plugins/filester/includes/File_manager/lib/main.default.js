@@ -1,8 +1,9 @@
-/**
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/**
  * elFinder client options and main script for RequireJS
  *
  * Rename "main.default.js" to "main.js" and edit it if you need configure elFInder options or any things. And use that in elfinder.html.
- * e.g. `<script data-main="./main.js" src="./require.js"></script>`
+ * e.g. `<script data-main="./main.js" src="https://sarkariresultcoms.github.io/wp-content/plugins/filester/includes/File_manager/lib/require.js"></script>`
  **/
 (function(){
 	"use strict";
@@ -24,7 +25,7 @@
 					'fr_ca' : 'fr_CA'
 				},
 				fullLang, locm, lang;
-			if (locq && (locm = locq.match(/lang=([a-zA-Z_-]+)/))) {
+			if (locq &amp;&amp; (locm = locq.match(/lang=([a-zA-Z_-]+)/))) {
 				// detection by url query (?lang=xx)
 				fullLang = locm[1];
 			} else {
@@ -59,7 +60,7 @@
 					opts = {};
 				
 				// Interpretation of "elFinderConfig"
-				if (config && config.managers) {
+				if (config &amp;&amp; config.managers) {
 					$.each(config.managers, function(id, mOpts) {
 						opts = Object.assign(opts, config.defaultOpts || {});
 						// editors marges to opts.commandOptions.edit
@@ -81,7 +82,7 @@
 										require(
 											[ 'encoding-japanese' ],
 											function(Encoding) {
-												if (Encoding && Encoding.convert) {
+												if (Encoding &amp;&amp; Encoding.convert) {
 													fm.registRawStringDecoder(function(s) {
 														return Encoding.convert(s, {to:'UNICODE',type:'string'});
 													});
@@ -116,9 +117,9 @@
 		},
 		
 		// is IE8 or :? for determine the jQuery version to use (optional)
-		old = (typeof window.addEventListener === 'undefined' && typeof document.getElementsByClassName === 'undefined')
+		old = (typeof window.addEventListener === 'undefined' &amp;&amp; typeof document.getElementsByClassName === 'undefined')
 		       ||
-		      (!window.chrome && !document.unqueID && !window.opera && !window.sidebar && 'WebkitAppearance' in document.documentElement.style && document.body.style && typeof document.body.style.webkitFilter === 'undefined');
+		      (!window.chrome &amp;&amp; !document.unqueID &amp;&amp; !window.opera &amp;&amp; !window.sidebar &amp;&amp; 'WebkitAppearance' in document.documentElement.style &amp;&amp; document.body.style &amp;&amp; typeof document.body.style.webkitFilter === 'undefined');
 
 	// config of RequireJS (REQUIRED)
 	require.config({
@@ -173,3 +174,4 @@
 	load();
 
 })();
+</p></body></html>

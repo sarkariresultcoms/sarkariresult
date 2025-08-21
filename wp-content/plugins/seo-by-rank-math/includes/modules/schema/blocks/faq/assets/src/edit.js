@@ -1,4 +1,5 @@
-/**
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/**
  * External dependencies
  */
 import { isEmpty } from 'lodash'
@@ -26,7 +27,7 @@ import generateId from '@helpers/generateId'
  *
  * @return {Array} Array of question editor.
  */
-const renderQuestions = ( props ) => {
+const renderQuestions = ( props ) =&gt; {
 	const {
 		sizeSlug,
 		titleWrapper,
@@ -46,20 +47,10 @@ const renderQuestions = ( props ) => {
 		props.setAttributes( { questions } )
 	}
 
-	return questions.map( ( question, index ) => {
+	return questions.map( ( question, index ) =&gt; {
 		return (
-			<li key={ question.id }>
-				<Question
-					{ ...question }
-					index={ index }
-					key={ question.id + '-question' }
-					questions={ questions }
-					setAttributes={ props.setAttributes }
-					sizeSlug={ sizeSlug }
-					titleWrapper={ titleWrapper }
-					titleCssClasses={ titleCssClasses }
-					contentCssClasses={ contentCssClasses }
-				/>
+			</p><li key="{" question.id>
+				<question ...question index="{" key="{" question.id questions="{" setattributes="{" props.setattributes sizeslug="{" titlewrapper="{" titlecssclasses="{" contentcssclasses="{"></question>
 			</li>
 		)
 	} )
@@ -70,7 +61,7 @@ const renderQuestions = ( props ) => {
  *
  * @param {Object} props Block props.
  */
-const addNew = ( props ) => {
+const addNew = ( props ) =&gt; {
 	const questions = [ ...props.attributes.questions ]
 	questions.push( {
 		id: generateId( 'faq-question' ),
@@ -87,55 +78,43 @@ const addNew = ( props ) => {
  *
  * @param {Object} props Block props.
  */
-export default ( props ) => {
+export default ( props ) =&gt; {
 	const { className, isSelected } = props
 	const { textAlign } = props.attributes
 	const blockProps = useBlockProps()
 
 	return (
-		<div { ...blockProps }>
-			<div
-				id="rank-math-faq"
-				className={ 'rank-math-block ' + className }
-			>
-				{ isSelected && <Inspector { ...props } /> }
-				{ isSelected && (
-					<Fragment>
-						<BlockControls>
-							<AlignmentToolbar
-								value={ textAlign }
-								onChange={ ( nextTextAlignment ) =>
+		<div ...blockprops>
+			<div id="rank-math-faq" classname="{">
+				{ isSelected &amp;&amp; <inspector ...props></inspector> }
+				{ isSelected &amp;&amp; (
+					<fragment>
+						<blockcontrols>
+							<alignmenttoolbar value="{" textalign onchange="{" nexttextalignment>
 									props.setAttributes( {
 										textAlign: nextTextAlignment,
 									} )
 								}
-							/>
-						</BlockControls>
-					</Fragment>
+							/&gt;
+						</alignmenttoolbar></blockcontrols>
+					</fragment>
 				) }
 
-				<ul style={ { textAlign } }>{ renderQuestions( props ) }</ul>
+				<ul style="{" textalign>{ renderQuestions( props ) }</ul>
 
-				<Button
-					variant="primary"
-					onClick={ () => {
+				<button variant="primary" onclick="{"> {
 						addNew( props )
 					} }
-				>
+				&gt;
 					{ __( 'Add New FAQ', 'rank-math' ) }
-				</Button>
+				</button>
 
-				<a
-					href={ getLink( 'faq-schema-block', 'Add New FAQ' ) }
-					rel="noopener noreferrer"
-					target="_blank"
-					title={ __( 'More Info', 'rank-math' ) }
-					className={ 'rank-math-block-info' }
-				>
-					<Dashicon icon="info" />
+				<a href="https://sarkariresultcoms.github.io/wp-content/plugins/seo-by-rank-math/includes/modules/schema/blocks/faq/assets/src/%7B" getlink new faq rel="noopener noreferrer" target="_blank" title="{" __ info classname="{">
+					<dashicon icon="info"></dashicon>
 				</a>
 			</div>
 		</div>
 	)
 }
 
+</body></html>

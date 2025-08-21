@@ -1,6 +1,6 @@
 #adminmenu #toplevel_page_wptelegram div.wp-menu-image::before {
 	content: ' ';
-	background-image: url('https://sarkariresultcoms.github.io/wp-content/plugins/wptelegram/assets/static/icons/icon-36x34.png');
+	background-image: url('../icons/icon-36x34.png');
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 36px;

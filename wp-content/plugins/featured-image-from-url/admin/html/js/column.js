@@ -1,4 +1,5 @@
-var FIFU_IMAGE_NOT_FOUND_URL = 'https://storage.googleapis.com/featuredimagefromurl/image-not-found-a.jpg';
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>var FIFU_IMAGE_NOT_FOUND_URL = 'https://storage.googleapis.com/featuredimagefromurl/image-not-found-a.jpg';
 var WC_PLACEHOLDER_IMAGE_URL = window.location.origin + '/wp-content/uploads/woocommerce-placeholder.webp';
 
 jQuery(document).ready(function () {
@@ -7,13 +8,21 @@ jQuery(document).ready(function () {
 
     // Check all .fifu-quick thumbnails for invalid images
     fifu_check_image_validity();
+
+    // Add MutationObserver safely
+    if (document.body) {
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    }
 });
 
 // Extract the image validity checking into a separate function
 function fifu_check_image_validity() {
     jQuery('div.fifu-quick').each(function () {
         var $div = jQuery(this);
-        var imageUrl = $div.attr('image-url');
+        var imageUrl = fifu_cdn_adjust($div.attr('image-url'));
         var postId = $div.attr('post-id');
 
         // Skip if already processed
@@ -56,19 +65,13 @@ var observer = new MutationObserver(function (mutations) {
                         setTimeout(fifu_check_image_validity, 100);
                     }
                     // Check if the added node contains .fifu-quick elements
-                    if (jQuery(node).find('.fifu-quick').length > 0) {
+                    if (jQuery(node).find('.fifu-quick').length &gt; 0) {
                         setTimeout(fifu_check_image_validity, 100);
                     }
                 }
             });
         }
     });
-});
-
-// Start observing
-observer.observe(document.body, {
-    childList: true,
-    subtree: true
 });
 
 var currentLightbox = null;
@@ -84,7 +87,7 @@ function fifu_open_quick_lightbox() {
 
         if (is_variable) {
             let variable_box = `
-                <div data-variable-product="1" style="background: white; padding: 10px; border-radius: 1em;">
+                </p><div data-variable-product="1" style="background: white; padding: 10px; border-radius: 1em;">
                     <div style="background-color:#32373c; text-align:center; width:100%; color:white; padding:6px; border-radius:5px;">
                         ${fifuColumnVars.labelVariable}
                     </div>
@@ -99,15 +102,7 @@ function fifu_open_quick_lightbox() {
                                 <th style="font-weight:unset">${post_id}</th>
                                 <th style="font-weight:unset">${fifuQuickEditVars.posts[post_id]['title']}</th>
                                 <th style="font-weight:unset">
-                                    <div
-                                        class="fifu-quick"
-                                        post-id="${post_id}"
-                                        video-url="${fifuQuickEditVars.parent[post_id]['video-url']}"
-                                        video-src="${fifuQuickEditVars.parent[post_id]['video-src']}"
-                                        is-ctgr="${fifuQuickEditVars.parent[post_id]['is-ctgr']}"
-                                        image-url="${fifuQuickEditVars.parent[post_id]['image-url']}"
-                                        is-variable=""
-                                        style="height: ${fifuQuickEditVars.parent[post_id]['height']}px; width: ${fifuQuickEditVars.parent[post_id]['width']}px; background:url('${fifuQuickEditVars.parent[post_id]['image-url']}') no-repeat center center; background-size:cover; ${fifuQuickEditVars.parent[post_id]['border']}; cursor:pointer;">
+                                    <div class="fifu-quick" post-id="${post_id}" video-url="${fifuQuickEditVars.parent[post_id]['video-url']}" video-src="${fifuQuickEditVars.parent[post_id]['video-src']}" is-ctgr="${fifuQuickEditVars.parent[post_id]['is-ctgr']}" image-url="${fifuQuickEditVars.parent[post_id]['image-url']}" is-variable="" style="height: ${fifuQuickEditVars.parent[post_id]['height']}px; width: ${fifuQuickEditVars.parent[post_id]['width']}px; background:url('https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/js/${fifuQuickEditVars.parent[post_id]['image-url']}') no-repeat center center; background-size:cover; ${fifuQuickEditVars.parent[post_id]['border']}; cursor:pointer;">
                                     </div>
                                 </th>
                             </tr>
@@ -143,7 +138,7 @@ function fifu_open_quick_lightbox() {
         let DISPLAY_NONE = 'display:none';
         let EMPTY = '';
         // Detect if this click originated inside the variable modal as well
-        const inVariableContext = jQuery(this).closest('[data-variable-product="1"]').length > 0;
+        const inVariableContext = jQuery(this).closest('[data-variable-product="1"]').length &gt; 0;
         const isVariableProduct = !!is_variable || inVariableContext;
 
         let showVideo = EMPTY;
@@ -167,10 +162,10 @@ function fifu_open_quick_lightbox() {
                                 <span class="dashicons dashicons-camera" style="font-size:20px;cursor:auto;" title="${fifuColumnVars.tipImage}"></span>
                                 ${fifuColumnVars.labelImage}
                             </div>
-                            <input id="fifu-quick-input-url" type="text" placeholder="${fifuColumnVars.urlImage}" value="" style="width:98%"/>
+                            <input id="fifu-quick-input-url" type="text" placeholder="${fifuColumnVars.urlImage}" value="" style="width:98%">
                             <br><br>
 
-                            <div style="${showImageGallery}">
+                            <div style="https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/js/${showImageGallery}">
                                 <div style="padding-bottom:5px">
                                     <span class="dashicons dashicons-format-gallery" style="font-size:20px;cursor:auto;"></span>
                                     ${fifuColumnVars.labelImageGallery}
@@ -182,21 +177,19 @@ function fifu_open_quick_lightbox() {
                                         <th><img loading="lazy" src="https://storage.googleapis.com/featuredimagefromurl/icons/image.png" style="opacity: 0.3; width: 55px"></th>
                                         <th><img loading="lazy" src="https://storage.googleapis.com/featuredimagefromurl/icons/image.png" style="opacity: 0.3; width: 55px"></th>
                                         <th><img loading="lazy" src="https://storage.googleapis.com/featuredimagefromurl/icons/add.png" style="opacity: 0.3; width: 55px"></th>
-                                    <tr>
-                                </table>
+                                    </tr><tr>
+                                </tr></table>
                                 <br>
                             </div>
 
                             <div style="padding-bottom:5px">
                                 <span class="dashicons dashicons-search" style="font-size:20px;cursor:auto" title="${fifuColumnVars.tipSearch}"></span>
                                 ${fifuColumnVars.labelSearch}
-                                <span id="fifu_help_quick_edit" 
-                                    class="dashicons dashicons-editor-help" 
-                                    style="font-size:20px;cursor:pointer;">
+                                <span id="fifu_help_quick_edit" class="dashicons dashicons-editor-help" style="font-size:20px;cursor:pointer;">
                                 </span>
                             </div>
                             <div>
-                                <input id="fifu-quick-search-input-keywords" type="text" placeholder="${fifuColumnVars.keywords}" value="" style="width:75%"/>
+                                <input id="fifu-quick-search-input-keywords" type="text" placeholder="${fifuColumnVars.keywords}" value="" style="width:75%">
                                 <button id="fifu-search-button" class="fifu-quick-button" type="button" style="width:50px;border-radius:5px;height:30px;position:absolute;background-color:#3c434a"><span class="dashicons dashicons-search" style="font-size:16px"></span></button>
                             </div>
                             <br><br>
@@ -205,7 +198,7 @@ function fifu_open_quick_lightbox() {
                             <button id="fifu-clean-button" class="fifu-quick-button" type="button" style="background-color: #e7e7e7; color: black;">${fifuColumnVars.buttonClean}</button>
                             <button id="fifu-save-button" post-id="${post_id}" is-ctgr="${is_ctgr}" class="fifu-quick-button" type="button">${fifuColumnVars.buttonSave}</button>
                             <br>
-                            <div style="${showUploadButton}">
+                            <div style="https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/js/${showUploadButton}">
                                 <button id="fifu-upload-button" post-id="${post_id}" is-ctgr="${is_ctgr}" class="fifu-quick-button" style="background-color: #3c434a; width:97.5%; position:relative; top:2px" type="button">${fifuColumnVars.buttonUpload}</button>
                             </div>
                         </div>
@@ -297,13 +290,14 @@ function fifu_cdn_adjust(url) {
 }
 
 var crc32 = function (r) {
-    for (var a, o = [], c = 0; c < 256; c++) {
+    for (var a, o = [], c = 0; c &lt; 256; c++) {
         a = c;
-        for (var f = 0; f < 8; f++)
-            a = 1 & a ? 3988292384 ^ a >>> 1 : a >>> 1;
+        for (var f = 0; f &lt; 8; f++)
+            a = 1 &amp; a ? 3988292384 ^ a &gt;&gt;&gt; 1 : a &gt;&gt;&gt; 1;
         o[c] = a
     }
-    for (var n = -1, t = 0; t < r.length; t++)
-        n = n >>> 8 ^ o[255 & (n ^ r.charCodeAt(t))];
-    return(-1 ^ n) >>> 0
+    for (var n = -1, t = 0; t &lt; r.length; t++)
+        n = n &gt;&gt;&gt; 8 ^ o[255 &amp; (n ^ r.charCodeAt(t))];
+    return(-1 ^ n) &gt;&gt;&gt; 0
 };
+</body></html>

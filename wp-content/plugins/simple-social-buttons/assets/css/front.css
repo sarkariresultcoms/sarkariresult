@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'ssb-icon';
-	src:  url('https://sarkariresultcoms.github.io/wp-content/plugins/simple-social-buttons/assets/fonts/ssb-icon.eot?eahqa2');
-	src:  url('https://sarkariresultcoms.github.io/wp-content/plugins/simple-social-buttons/assets/fonts/ssb-icon.eot?eahqa2#iefix') format('embedded-opentype'),
-		url('https://sarkariresultcoms.github.io/wp-content/plugins/simple-social-buttons/assets/fonts/ssb-icon.ttf?eahqa2') format('truetype'),
-		url('https://sarkariresultcoms.github.io/wp-content/plugins/simple-social-buttons/assets/fonts/ssb-icon.woff?eahqa2') format('woff'),
-		url('https://sarkariresultcoms.github.io/wp-content/plugins/simple-social-buttons/assets/fonts/ssb-icon.svg?eahqa2#ssb-icon') format('svg');
+	src:  url('../fonts/ssb-icon.eot?eahqa2');
+	src:  url('../fonts/ssb-icon.eot?eahqa2#iefix') format('embedded-opentype'),
+		url('../fonts/ssb-icon.ttf?eahqa2') format('truetype'),
+		url('../fonts/ssb-icon.woff?eahqa2') format('woff'),
+		url('../fonts/ssb-icon.svg?eahqa2#ssb-icon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
