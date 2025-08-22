@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>jQuery(document).ready(function ($) {
+    jQuery('a#deactivate-featured-image-from-url').click(function (e) {
+        e.preventDefault();
+        jQuery.fancybox.open(`
+            </p><table>`
+                +
+                `             
+                <tr>
+                    <td><button class="uninstall" style="background-color:#f44336" id="pre-deactivate">${fifuUninstallVars.buttonTextClean}</button></td>
+                    <td><button class="uninstall" style="width:100%;background-color:#008CBA" id="deactivate">${fifuUninstallVars.buttonTextDeactivate}</button></td>
+                </tr>
+                <tr>
+                    <td style="color:black;text-align:center">${fifuUninstallVars.buttonDescriptionClean}</td>
+                    <td style="color:black;text-align:center">${fifuUninstallVars.buttonDescriptionDeactivate}</td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+            <h4>${fifuUninstallVars.textWhy} <span style="color:grey">${fifuUninstallVars.textEmail}</span></h4>
+            <textarea id="fifu-description" style="width:100%;height:135px;padding:10px;font-size:13px" placeholder="${fifuUninstallVars.textReasonConflict}${fifuUninstallVars.textReasonPro}${fifuUninstallVars.textReasonSeo}...${fifuUninstallVars.textReasonLocal}${fifuUninstallVars.textReasonUndestand}${fifuUninstallVars.textReasonOthers}"></textarea>
+        `);
+    });
+
+    jQuery(document).on("click", "button#deactivate", function () {
+        let description = jQuery('textarea#fifu-description').val();
+        let temporary = true;
+
+        if (description) {
+            jQuery('.fancybox-slide').block({message: '', css: {backgroundColor: 'none', border: 'none', color: 'white'}});
+            setTimeout(function () {
+                send_feedback(description, temporary);
+            }, 250);
+        }
+
+        let href = jQuery('a#deactivate-featured-image-from-url').attr('href');
+        window.location.href = href;
+    });
+
+    jQuery(document).on("click", "button#pre-deactivate", function () {
+        let description = jQuery('textarea#fifu-description').val();
+        let temporary = false;
+
+        jQuery('.fancybox-slide').block({message: '', css: {backgroundColor: 'none', border: 'none', color: 'white'}});
+        setTimeout(function () {
+            jQuery.ajax({
+                method: "POST",
+                url: fifuUninstallVars.restUrl + 'featured-image-from-url/v2/pre_deactivate/',
+                data: {
+                    "description": description,
+                    "temporary": temporary,
+                },
+                async: false,
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('X-WP-Nonce', fifuUninstallVars.nonce);
+                },
+                success: function (data) {
+                    let href = jQuery('a#deactivate-featured-image-from-url').attr('href');
+                    window.location.href = href;
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR);
+                    console.log(textStatus);
+                    console.log(errorThrown);
+                },
+                complete: function () {
+                    // jQuery('.fancybox-slide').unblock();
+                }
+            });
+        }, 250);
+    });
+
+    // activating fifu pro
+    jQuery('a#activate-fifu-premium, a#activate-featured-image-from-url-fifu-premium').click(function (e) {
+        e.preventDefault();
+
+        jQuery('div#wpwrap').block({message: '', css: {backgroundColor: 'none', border: 'none', color: 'white'}});
+        setTimeout(function () {
+            jQuery.ajax({
+                method: "POST",
+                url: fifuUninstallVars.restUrl + 'featured-image-from-url/v2/deactivate_itself/',
+                data: {},
+                async: false,
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('X-WP-Nonce', fifuUninstallVars.nonce);
+                },
+                success: function (data) {
+                    let href = jQuery('a#activate-fifu-premium').attr('href');
+                    if (!href)
+                        href = jQuery('a#activate-featured-image-from-url-fifu-premium').attr('href');
+                    window.location.href = href;
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(jqXHR);
+                    console.log(textStatus);
+                    console.log(errorThrown);
+                },
+                complete: function () {
+                }
+            });
+        }, 250);
+    });
+});
+
+function send_feedback(description, temporary) {
+    jQuery.ajax({
+        method: "POST",
+        url: fifuUninstallVars.restUrl + 'featured-image-from-url/v2/feedback/',
+        data: {
+            "description": description,
+            "temporary": temporary,
+        },
+        async: false,
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('X-WP-Nonce', fifuUninstallVars.nonce);
+        },
+        success: function (data) {
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR);
+            console.log(textStatus);
+            console.log(errorThrown);
+        },
+        complete: function () {
+        }
+    });
+}
+</body></html>

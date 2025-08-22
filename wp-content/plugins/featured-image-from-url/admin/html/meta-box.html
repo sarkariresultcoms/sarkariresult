@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div id="fifu_meta_box">
+
+    <!-- show alt field, image and link if URL was already provided -->
+
+    <table id="fifu_table_alt" style="width:100%;position:relative;&lt;?php echo $show_alt ?&gt;">
+        <tr>
+            <td style="width:100%;padding:unset !important;">
+                <input id="fifu_input_alt" type="text" name="fifu_input_alt" placeholder="&lt;?php $fifu['common']['alt']() ?&gt;" value="&lt;?php echo esc_attr($alt); ?&gt;" style="&lt;?php echo $width ?&gt;;font-size:13px;margin:0px 0px 0px 2px">
+            </td>
+            <td style="padding:unset !important;">
+                <span id="fifu_help_alt" class="dashicons dashicons-editor-help" style="font-size:20px;cursor:help;" title="&lt;?php $fifu['alt']['help']() ?&gt;">
+                </span>
+            </td>
+        </tr>
+    </table>
+
+    <div id="fifu_image" style="https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/&lt;?php_echo_$height,_$show_image_?&gt;__________background:url('https://sarkariresultcoms_github_io/wp-content/plugins/featured-image-from-url/admin/html/&lt;?php_echo_esc_url($url_'');_?&gt;')_no-repeat_center_center;__________background-size:cover;__________cursor:zoom-in;__________border-radius:3px;__________margin:0px_6px_-1px_4px;">
+    </div>
+
+    <table id="fifu_table_url" style="width:100%;position:relative">
+        <tr>
+            <td style="width:100%">
+                <input id="fifu_input_url" type="text" name="fifu_input_url" placeholder="&lt;?php $fifu['image']['keywords']() ?&gt;" value="&lt;?php echo esc_url($url ?? ''); ?&gt;" style="&lt;?php echo $width ?&gt;;font-size:13px;">
+            </td>
+            <td>
+                <span id="fifu_help" class="dashicons dashicons-editor-help" style="https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/&lt;?php_echo_$show_button___';font-size:20px;cursor:pointer;'_?&gt;">
+                </span>
+            </td>
+        </tr>
+    </table>
+
+    <center>
+        <a id="fifu_link" onclick="removeImage(false);" style="https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/&lt;?php_echo_$show_link_?&gt;;_cursor:pointer"><?php $fifu['image']['remove']() ?></a>
+    </center>
+
+    <input type="hidden" id="fifu_input_image_width" name="fifu_input_image_width" value="">
+
+    <input type="hidden" id="fifu_input_image_height" name="fifu_input_image_height" value="">
+
+    <input type="hidden" id="fifu_keywords" name="fifu_keywords" value="">
+
+    <!-- show preview button if URL was not provided yet -->
+
+    <a id="fifu_button" class="button" onclick="previewImage();" style="https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/&lt;?php_echo_$align,_$margin,_$show_button_?&gt;"><?php $fifu['common']['preview']() ?></a>
+
+    <div id="fifu_sirv_button" style="https://sarkariresultcoms.github.io/wp-content/plugins/featured-image-from-url/admin/html/&lt;?php_echo_'float:left;padding-right:8px;'___$align,_$margin,_fifu_is_sirv_active()_?_$show_button_:_'display:none'_?&gt;">
+        <div class="sirv-modal"></div>
+        <a id="sirv-add-featured-image" data-input-anchor="#fifu_input_url" href="#" class="button sirv-add-image-modal-click" title="&lt;?php $fifu['image']['sirv']['add']() ?&gt;"><?php $fifu['image']['sirv']['choose']() ?></a>
+    </div>
+
+</div>
+</body></html>

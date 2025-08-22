@@ -1,0 +1,421 @@
+0000.002 (0) Opened log file at time: Fri, 22 Aug 2025 04:59:32 +0000 on http://localhost:8080/sarkariresult
+0000.010 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.7 WP: 6.8.2 PHP: 8.2.12 (apache2handler, Windows NT DESKTOP-TKGV7RR 10.0 build 26100 (Windows 11) AMD64) MySQL: 10.4.32-MariaDB (max packet size=33554432) WPLANG: en_US Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 85.1M | 104M) multisite: N openssl: OpenSSL 3.0.11 19 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.015 (0) Free space on disk containing Updraft's temporary directory: 171305.6 MB
+0000.266 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.270 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.348 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1753858631, seconds_ago=1980141)
+0000.355 (0) Semaphore (fd, wp_options) was stuck, set lock time to 2025-08-22 04:59:32
+0000.361 (0) Semaphore (fd, wp_options) reset to 1
+0000.366 (0) Set semaphore last lock (fd) time to 2025-08-22 04:59:32
+0000.370 (0) Semaphore lock (fd) complete
+0000.392 (0) Backup run: resumption=0, nonce=faa9e85f34a6, file_nonce=faa9e85f34a6 begun at=1755838772 (0s ago), job type=backup
+0000.403 (0) Scheduling a resumption (1) after 300 seconds (1755839072) in case this run gets aborted
+0000.585 (0) Checking if we have a zip executable available
+0000.600 (0) Creation of backups of directories: beginning
+0000.613 (0) No backup of plugins: excluded by user's options
+0000.617 (0) No backup of themes: excluded by user's options
+0000.622 (0) No backup of uploads: excluded by user's options
+0000.628 (0) No backup of mu-plugins: excluded by user's options
+0000.635 (0) No backup of others: excluded by user's options
+0000.654 (0) Saving backup status to database (elements: 0)
+0000.667 (0) Beginning creation of database dump (WordPress DB)
+0000.671 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.682 (0) Testing potential mysqldump binary: C:\Program Files\MySQL\MySQL Workbench 8.0\mysqldump.exe
+0000.971 (0) Binary mysqldump: error (code: 2)
+0000.998 (0) Testing potential mysqldump binary: C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump.exe
+0001.231 (0) Binary mysqldump: error (code: 2)
+0001.468 (0) Table wp_options: Total expected rows (via COUNT): 1007
+0001.772 (0) Table wp_options: Rows added in this batch (next record: 390953): 1002 (uncompressed bytes in this segment=4480716) in 0.44 seconds
+0001.809 (0) Table wp_options: finishing file(s) (2, 533 KB)
+0001.889 (0) Table wp_users: Total expected rows (via COUNT): 1
+0001.893 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.904 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1207) in 0.07 seconds
+0001.936 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0001.984 (0) Table wp_usermeta: Total expected rows (via COUNT): 94
+0001.988 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0002.007 (0) Table wp_usermeta: Rows added in this batch (next record: 119): 94 (uncompressed bytes in this segment=11233) in 0.04 seconds
+0002.062 (0) Table wp_usermeta: finishing file(s) (2, 4.4 KB)
+0002.115 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 80
+0002.120 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0002.129 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 1140): 80 (uncompressed bytes in this segment=38900) in 0.05 seconds
+0002.165 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 3.8 KB)
+0002.243 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0002.255 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=633) in 0.06 seconds
+0002.298 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0002.383 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 4
+0002.386 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0002.414 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 5): 4 (uncompressed bytes in this segment=714) in 0.08 seconds
+0002.460 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0002.509 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 241
+0002.514 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0002.534 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 2941): 241 (uncompressed bytes in this segment=29159) in 0.06 seconds
+0002.558 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 3 KB)
+0002.636 (0) Table wp_commentmeta: Total expected rows (via COUNT): 6
+0002.640 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0002.650 (0) Table wp_commentmeta: Rows added in this batch (next record: 10): 6 (uncompressed bytes in this segment=1438) in 0.07 seconds
+0002.687 (0) Table wp_commentmeta: finishing file(s) (2, 0.6 KB)
+0002.771 (0) Table wp_comments: Total expected rows (via COUNT): 0
+0002.779 (0) Table wp_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1463) in 0.05 seconds
+0002.804 (0) Table wp_comments: finishing file(s) (2, 0.5 KB)
+0002.981 (0) Table wp_imagify_files: Total expected rows (via COUNT): 0
+0002.988 (0) Table wp_imagify_files: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1331) in 0.09 seconds
+0003.038 (0) Table wp_imagify_files: finishing file(s) (2, 0.5 KB)
+0003.069 (0) Table wp_imagify_folders: Total expected rows (via COUNT): 0
+0003.077 (0) Table wp_imagify_folders: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=605) in 0.02 seconds
+0003.098 (0) Table wp_imagify_folders: finishing file(s) (2, 0.4 KB)
+0003.130 (0) Table wp_links: Total expected rows (via COUNT): 0
+0003.135 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1023) in 0.02 seconds
+0003.179 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0003.969 (0) Table wp_postmeta: Total expected rows (approximate): 23741
+0006.394 (0) Table wp_postmeta: Rows added in this batch (next record: 49993): 23685 (uncompressed bytes in this segment=40200500) in 3.20 seconds
+0006.422 (0) Table wp_postmeta: finishing file(s) (2, 1863.3 KB)
+0006.726 (0) Table wp_posts: Total expected rows (approximate): 1243
+0007.354 (0) Table wp_posts: Rows added in this batch (next record: 4999): 1636 (uncompressed bytes in this segment=12452078) in 0.91 seconds
+0007.383 (0) Table wp_posts: finishing file(s) (2, 571.1 KB)
+0007.465 (0) Table wp_term_relationships: Total expected rows (approximate): 535
+0007.482 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 535 (uncompressed bytes in this segment=9556) in 0.06 seconds
+0007.506 (0) Table wp_term_relationships: finishing file(s) (2, 1.8 KB)
+0007.574 (0) Table wp_term_taxonomy: Total expected rows (approximate): 1226
+0007.611 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 1227): 1226 (uncompressed bytes in this segment=44164) in 0.08 seconds
+0007.637 (0) Table wp_term_taxonomy: finishing file(s) (2, 7.1 KB)
+0007.685 (0) Table wp_termmeta: Total expected rows (via COUNT): 5
+0007.690 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.705 (0) Table wp_termmeta: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1049) in 0.04 seconds
+0007.736 (0) Table wp_termmeta: finishing file(s) (2, 0.6 KB)
+0007.769 (0) Table wp_terms: Total expected rows (approximate): 1226
+0007.827 (0) Table wp_terms: Rows added in this batch (next record: 1227): 1226 (uncompressed bytes in this segment=77015) in 0.07 seconds
+0007.857 (0) Table wp_terms: finishing file(s) (2, 18.5 KB)
+0007.901 (0) Table wp_aioseo_notifications: Total expected rows (via COUNT): 1
+0007.906 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.919 (0) Table wp_aioseo_notifications: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1881) in 0.04 seconds
+0007.952 (0) Table wp_aioseo_notifications: finishing file(s) (2, 0.8 KB)
+0008.000 (0) Table wp_aioseo_posts: Total expected rows (via COUNT): 12
+0008.004 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.014 (0) Table wp_aioseo_posts: Rows added in this batch (next record: 12): 12 (uncompressed bytes in this segment=7197) in 0.03 seconds
+0008.054 (0) Table wp_aioseo_posts: finishing file(s) (2, 1.1 KB)
+0008.105 (0) Table wp_auto_spinner_log: Total expected rows (via COUNT): 5
+0008.115 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.120 (0) Table wp_auto_spinner_log: Rows added in this batch (next record: 487): 5 (uncompressed bytes in this segment=1132) in 0.05 seconds
+0008.214 (0) Table wp_auto_spinner_log: finishing file(s) (2, 0.5 KB)
+0008.256 (0) Table wp_automatic_amazon_links: Total expected rows (via COUNT): 0
+0008.271 (0) Table wp_automatic_amazon_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=809) in 0.03 seconds
+0008.356 (0) Table wp_automatic_amazon_links: finishing file(s) (2, 0.4 KB)
+0008.434 (0) Table wp_automatic_articles_keys: Total expected rows (via COUNT): 0
+0008.450 (0) Table wp_automatic_articles_keys: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=796) in 0.05 seconds
+0008.497 (0) Table wp_automatic_articles_keys: finishing file(s) (2, 0.4 KB)
+0008.567 (0) Table wp_automatic_articles_links: Total expected rows (via COUNT): 0
+0008.574 (0) Table wp_automatic_articles_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=720) in 0.03 seconds
+0008.601 (0) Table wp_automatic_articles_links: finishing file(s) (2, 0.4 KB)
+0008.645 (0) Table wp_automatic_cached: Total expected rows (via COUNT): 0
+0008.655 (0) Table wp_automatic_cached: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=614) in 0.03 seconds
+0008.680 (0) Table wp_automatic_cached: finishing file(s) (2, 0.3 KB)
+0008.729 (0) Table wp_automatic_camps: Total expected rows (via COUNT): 1
+0008.733 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.747 (0) Table wp_automatic_camps: Rows added in this batch (next record: 2850): 1 (uncompressed bytes in this segment=11457) in 0.05 seconds
+0008.849 (0) Table wp_automatic_camps: finishing file(s) (2, 3.6 KB)
+0008.892 (0) Table wp_automatic_categories: Total expected rows (approximate): 272
+0008.914 (0) Table wp_automatic_categories: Rows added in this batch (next record: 1000): 272 (uncompressed bytes in this segment=8945) in 0.04 seconds
+0008.947 (0) Table wp_automatic_categories: finishing file(s) (2, 3.2 KB)
+0008.999 (0) Table wp_automatic_clickbank_links: Total expected rows (via COUNT): 0
+0009.008 (0) Table wp_automatic_clickbank_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=729) in 0.04 seconds
+0009.045 (0) Table wp_automatic_clickbank_links: finishing file(s) (2, 0.4 KB)
+0009.165 (0) Table wp_automatic_general: Total expected rows (via COUNT): 0
+0009.170 (0) Table wp_automatic_general: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=604) in 0.09 seconds
+0009.204 (0) Table wp_automatic_general: finishing file(s) (2, 0.3 KB)
+0009.271 (0) Table wp_automatic_keywords: Total expected rows (via COUNT): 0
+0009.281 (0) Table wp_automatic_keywords: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=742) in 0.04 seconds
+0009.318 (0) Table wp_automatic_keywords: finishing file(s) (2, 0.4 KB)
+0009.353 (0) Table wp_automatic_links: Total expected rows (via COUNT): 0
+0009.365 (0) Table wp_automatic_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=577) in 0.03 seconds
+0009.399 (0) Table wp_automatic_links: finishing file(s) (2, 0.3 KB)
+0009.492 (0) Table wp_automatic_log: Total expected rows (via COUNT): 298
+0009.500 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0009.537 (0) Table wp_automatic_log: Rows added in this batch (next record: 1428): 298 (uncompressed bytes in this segment=62541) in 0.12 seconds
+0009.589 (0) Table wp_automatic_log: finishing file(s) (2, 12.7 KB)
+0009.657 (0) Table wp_automatic_youtube_links: Total expected rows (via COUNT): 0
+0009.667 (0) Table wp_automatic_youtube_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1039) in 0.05 seconds
+0009.698 (0) Table wp_automatic_youtube_links: finishing file(s) (2, 0.4 KB)
+0009.774 (0) Table wp_b2s_network_insights: Total expected rows (via COUNT): 0
+0009.781 (0) Table wp_b2s_network_insights: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=711) in 0.06 seconds
+0009.828 (0) Table wp_b2s_network_insights: finishing file(s) (2, 0.4 KB)
+0009.863 (0) Table wp_b2s_posts: Total expected rows (via COUNT): 282
+0009.867 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0009.886 (0) Table wp_b2s_posts: Rows added in this batch (next record: 282): 282 (uncompressed bytes in this segment=41581) in 0.04 seconds
+0009.914 (0) Table wp_b2s_posts: finishing file(s) (2, 2.9 KB)
+0009.954 (0) Table wp_b2s_posts_drafts: Total expected rows (via COUNT): 5
+0009.960 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0009.983 (0) Table wp_b2s_posts_drafts: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=108694) in 0.05 seconds
+0010.008 (0) Table wp_b2s_posts_drafts: finishing file(s) (2, 11.5 KB)
+0010.040 (0) Table wp_b2s_posts_favorites: Total expected rows (via COUNT): 0
+0010.047 (0) Table wp_b2s_posts_favorites: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=648) in 0.02 seconds
+0010.076 (0) Table wp_b2s_posts_favorites: finishing file(s) (2, 0.4 KB)
+0010.124 (0) Table wp_b2s_posts_insights: Total expected rows (via COUNT): 0
+0010.129 (0) Table wp_b2s_posts_insights: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=825) in 0.04 seconds
+0010.160 (0) Table wp_b2s_posts_insights: finishing file(s) (2, 0.4 KB)
+0010.192 (0) Table wp_b2s_posts_network_details: Total expected rows (via COUNT): 8
+0010.197 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0010.205 (0) Table wp_b2s_posts_network_details: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=1257) in 0.03 seconds
+0010.239 (0) Table wp_b2s_posts_network_details: finishing file(s) (2, 0.6 KB)
+0010.270 (0) Table wp_b2s_posts_sched_details: Total expected rows (via COUNT): 0
+0010.281 (0) Table wp_b2s_posts_sched_details: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=547) in 0.02 seconds
+0010.320 (0) Table wp_b2s_posts_sched_details: finishing file(s) (2, 0.3 KB)
+0010.377 (0) Table wp_b2s_user: Total expected rows (via COUNT): 1
+0010.380 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0010.389 (0) Table wp_b2s_user: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=992) in 0.04 seconds
+0010.411 (0) Table wp_b2s_user: finishing file(s) (2, 0.6 KB)
+0010.459 (0) Table wp_b2s_user_contact: Total expected rows (via COUNT): 0
+0010.468 (0) Table wp_b2s_user_contact: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1186) in 0.04 seconds
+0010.496 (0) Table wp_b2s_user_contact: finishing file(s) (2, 0.5 KB)
+0010.536 (0) Table wp_b2s_user_network_settings: Total expected rows (via COUNT): 0
+0010.543 (0) Table wp_b2s_user_network_settings: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=655) in 0.02 seconds
+0010.579 (0) Table wp_b2s_user_network_settings: finishing file(s) (2, 0.3 KB)
+0010.629 (0) Table wp_b2s_user_tool: Total expected rows (via COUNT): 0
+0010.635 (0) Table wp_b2s_user_tool: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=693) in 0.03 seconds
+0010.670 (0) Table wp_b2s_user_tool: finishing file(s) (2, 0.4 KB)
+0010.702 (0) Table wp_blc_filters: Total expected rows (via COUNT): 0
+0010.711 (0) Table wp_blc_filters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=471) in 0.02 seconds
+0010.742 (0) Table wp_blc_filters: finishing file(s) (2, 0.3 KB)
+0010.775 (0) Table wp_blc_instances: Total expected rows (via COUNT): 452
+0010.781 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0010.803 (0) Table wp_blc_instances: Rows added in this batch (next record: 4175): 452 (uncompressed bytes in this segment=63464) in 0.04 seconds
+0010.855 (0) Table wp_blc_instances: finishing file(s) (2, 9.6 KB)
+0010.919 (0) Table wp_blc_links: Total expected rows (via COUNT): 245
+0010.925 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0011.002 (0) Table wp_blc_links: Rows added in this batch (next record: 875): 245 (uncompressed bytes in this segment=416093) in 0.12 seconds
+0011.025 (0) Table wp_blc_links: finishing file(s) (2, 45.2 KB)
+0011.060 (0) Table wp_blc_synch: Total expected rows (approximate): 111
+0011.070 (0) Table wp_blc_synch: Rows added in this batch (next record: 1000): 111 (uncompressed bytes in this segment=5360) in 0.02 seconds
+0011.097 (0) Table wp_blc_synch: finishing file(s) (2, 1.2 KB)
+0011.142 (0) Table wp_e_events: Total expected rows (via COUNT): 0
+0011.149 (0) Table wp_e_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=507) in 0.03 seconds
+0011.184 (0) Table wp_e_events: finishing file(s) (2, 0.3 KB)
+0011.217 (0) Table wp_fifu_invalid_media_su: Total expected rows (via COUNT): 0
+0011.225 (0) Table wp_fifu_invalid_media_su: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=562) in 0.02 seconds
+0011.279 (0) Table wp_fifu_invalid_media_su: finishing file(s) (2, 0.4 KB)
+0011.312 (0) Table wp_fifu_meta_in: Total expected rows (via COUNT): 0
+0011.318 (0) Table wp_fifu_meta_in: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=477) in 0.02 seconds
+0011.350 (0) Table wp_fifu_meta_in: finishing file(s) (2, 0.3 KB)
+0011.402 (0) Table wp_fifu_meta_out: Total expected rows (via COUNT): 0
+0011.408 (0) Table wp_fifu_meta_out: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=484) in 0.02 seconds
+0011.443 (0) Table wp_fifu_meta_out: finishing file(s) (2, 0.3 KB)
+0011.504 (0) Table wp_litespeed_img_optm: Total expected rows (via COUNT): 46
+0011.520 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0011.533 (0) Table wp_litespeed_img_optm: Rows added in this batch (next record: 125): 46 (uncompressed bytes in this segment=4539) in 0.07 seconds
+0011.553 (0) Table wp_litespeed_img_optm: finishing file(s) (2, 1.5 KB)
+0011.605 (0) Table wp_litespeed_img_optming: Total expected rows (via COUNT): 0
+0011.621 (0) Table wp_litespeed_img_optming: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=760) in 0.05 seconds
+0011.667 (0) Table wp_litespeed_img_optming: finishing file(s) (2, 0.4 KB)
+0011.702 (0) Table wp_loginizer_logs: Total expected rows (approximate): 0
+0011.713 (0) Table wp_loginizer_logs: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=618) in 0.02 seconds
+0011.751 (0) Table wp_loginizer_logs: finishing file(s) (2, 0.3 KB)
+0011.813 (0) Table wp_rank_math_404_logs: Total expected rows (via COUNT): 0
+0011.819 (0) Table wp_rank_math_404_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=731) in 0.03 seconds
+0011.846 (0) Table wp_rank_math_404_logs: finishing file(s) (2, 0.4 KB)
+0011.887 (0) Table wp_rank_math_analytics_objects: Total expected rows (via COUNT): 105
+0011.895 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0011.909 (0) Table wp_rank_math_analytics_objects: Rows added in this batch (next record: 105): 105 (uncompressed bytes in this segment=23710) in 0.04 seconds
+0011.932 (0) Table wp_rank_math_analytics_objects: finishing file(s) (2, 5.3 KB)
+0011.963 (0) Table wp_rank_math_internal_links: Total expected rows (via COUNT): 770
+0012.002 (0) Table wp_rank_math_internal_links: Rows added in this batch (next record: 47714): 770 (uncompressed bytes in this segment=70857) in 0.05 seconds
+0012.034 (0) Table wp_rank_math_internal_links: finishing file(s) (2, 12 KB)
+0012.063 (0) Table wp_rank_math_internal_meta: Total expected rows (via COUNT): 176
+0012.068 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0012.081 (0) Table wp_rank_math_internal_meta: Rows added in this batch (next record: 4284): 176 (uncompressed bytes in this segment=3802) in 0.03 seconds
+0012.105 (0) Table wp_rank_math_internal_meta: finishing file(s) (2, 1.2 KB)
+0012.135 (0) Table wp_redirection_404: Total expected rows (via COUNT): 0
+0012.145 (0) Table wp_redirection_404: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=871) in 0.02 seconds
+0012.186 (0) Table wp_redirection_404: finishing file(s) (2, 0.4 KB)
+0012.215 (0) Table wp_redirection_groups: Total expected rows (via COUNT): 2
+0012.218 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0012.227 (0) Table wp_redirection_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=904) in 0.02 seconds
+0012.254 (0) Table wp_redirection_groups: finishing file(s) (2, 0.5 KB)
+0012.291 (0) Table wp_redirection_items: Total expected rows (via COUNT): 813
+0012.338 (0) Table wp_redirection_items: Rows added in this batch (next record: 813): 813 (uncompressed bytes in this segment=255569) in 0.06 seconds
+0012.358 (0) Table wp_redirection_items: finishing file(s) (2, 10.6 KB)
+0012.387 (0) Table wp_redirection_logs: Total expected rows (via COUNT): 0
+0012.393 (0) Table wp_redirection_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1009) in 0.02 seconds
+0012.417 (0) Table wp_redirection_logs: finishing file(s) (2, 0.5 KB)
+0012.464 (0) Table wp_simply_static_pages: Total expected rows (approximate): 16412
+0013.862 (0) Table wp_simply_static_pages: Rows added in this batch (next record: 77638): 16412 (uncompressed bytes in this segment=6948929) in 1.43 seconds
+0013.886 (0) Table wp_simply_static_pages: finishing file(s) (2, 353.4 KB)
+0013.928 (0) Table wp_smush_dir_images: Total expected rows (via COUNT): 0
+0013.933 (0) Table wp_smush_dir_images: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=916) in 0.03 seconds
+0013.961 (0) Table wp_smush_dir_images: finishing file(s) (2, 0.4 KB)
+0013.998 (0) Table wp_wpforms_tasks_meta: Total expected rows (via COUNT): 3
+0014.003 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0014.013 (0) Table wp_wpforms_tasks_meta: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=838) in 0.03 seconds
+0014.037 (0) Table wp_wpforms_tasks_meta: finishing file(s) (2, 0.5 KB)
+0014.064 (0) Table wp_yoast_indexable: Total expected rows (via COUNT): 0
+0014.072 (0) Table wp_yoast_indexable: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2752) in 0.02 seconds
+0014.101 (0) Table wp_yoast_indexable: finishing file(s) (2, 0.8 KB)
+0014.130 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 0
+0014.136 (0) Table wp_yoast_indexable_hierarchy: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=744) in 0.02 seconds
+0014.158 (0) Table wp_yoast_indexable_hierarchy: finishing file(s) (2, 0.4 KB)
+0014.197 (0) Table wp_yoast_migrations: Total expected rows (via COUNT): 16
+0014.202 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0014.212 (0) Table wp_yoast_migrations: Rows added in this batch (next record: 16): 16 (uncompressed bytes in this segment=989) in 0.03 seconds
+0014.229 (0) Table wp_yoast_migrations: finishing file(s) (2, 0.5 KB)
+0014.256 (0) Table wp_yoast_primary_term: Total expected rows (via COUNT): 0
+0014.263 (0) Table wp_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=829) in 0.01 seconds
+0014.283 (0) Table wp_yoast_primary_term: finishing file(s) (2, 0.4 KB)
+0014.310 (0) Table wp_yoast_seo_links: Total expected rows (via COUNT): 0
+0014.316 (0) Table wp_yoast_seo_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=998) in 0.02 seconds
+0014.332 (0) Table wp_yoast_seo_links: finishing file(s) (2, 0.4 KB)
+0014.335 (0) PHP event: code E_WARNING: filemtime(): stat failed for C:\xampp\htdocs\sarkariresult/wp-content/updraft/backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db.gz (line 1923, C:\xampp\htdocs\sarkariresult\wp-content\plugins\updraftplus\backup.php)
+0014.343 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_options.table.tmpr390954.gz (1/71/fopen): adding to final database dump
+0014.381 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_options.table.gz (2/71/fopen): adding to final database dump
+0014.385 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_users.table.tmpr2.gz (3/71/fopen): adding to final database dump
+0014.390 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_users.table.gz (4/71/fopen): adding to final database dump
+0014.395 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_usermeta.table.tmpr120.gz (5/71/fopen): adding to final database dump
+0014.398 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_usermeta.table.gz (6/71/fopen): adding to final database dump
+0014.402 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_actions.table.tmpr1141.gz (7/71/fopen): adding to final database dump
+0014.409 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_actions.table.gz (8/71/fopen): adding to final database dump
+0014.413 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/71/fopen): adding to final database dump
+0014.418 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_claims.table.gz (10/71/fopen): adding to final database dump
+0014.424 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_groups.table.tmpr6.gz (11/71/fopen): adding to final database dump
+0014.435 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_groups.table.gz (12/71/fopen): adding to final database dump
+0014.441 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_logs.table.tmpr2942.gz (13/71/fopen): adding to final database dump
+0014.450 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_actionscheduler_logs.table.gz (14/71/fopen): adding to final database dump
+0014.460 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_commentmeta.table.tmpr11.gz (15/71/fopen): adding to final database dump
+0014.464 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_commentmeta.table.gz (16/71/fopen): adding to final database dump
+0014.469 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_comments.table.tmpr0.gz (17/71/fopen): adding to final database dump
+0014.473 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_comments.table.gz (18/71/fopen): adding to final database dump
+0014.478 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_imagify_files.table.tmpr0.gz (19/71/fopen): adding to final database dump
+0014.482 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_imagify_files.table.gz (20/71/fopen): adding to final database dump
+0014.485 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_imagify_folders.table.tmpr0.gz (21/71/fopen): adding to final database dump
+0014.491 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_imagify_folders.table.gz (22/71/fopen): adding to final database dump
+0014.495 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_links.table.tmpr0.gz (23/71/fopen): adding to final database dump
+0014.498 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_links.table.gz (24/71/fopen): adding to final database dump
+0014.501 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_postmeta.table.tmpr49994.gz (25/71/fopen): adding to final database dump
+0014.619 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_postmeta.table.gz (26/71/fopen): adding to final database dump
+0014.622 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_posts.table.tmpr5000.gz (27/71/fopen): adding to final database dump
+0014.664 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_posts.table.gz (28/71/fopen): adding to final database dump
+0014.669 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_term_relationships.table.tmpr100001.gz (29/71/fopen): adding to final database dump
+0014.675 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_term_relationships.table.gz (30/71/fopen): adding to final database dump
+0014.680 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_term_taxonomy.table.tmpr1228.gz (31/71/fopen): adding to final database dump
+0014.686 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_term_taxonomy.table.gz (32/71/fopen): adding to final database dump
+0014.691 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_termmeta.table.tmpr6.gz (33/71/fopen): adding to final database dump
+0014.696 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_termmeta.table.gz (34/71/fopen): adding to final database dump
+0014.701 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_terms.table.tmpr1228.gz (35/71/fopen): adding to final database dump
+0014.708 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_terms.table.gz (36/71/fopen): adding to final database dump
+0014.713 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_aioseo_notifications.table.tmpr2.gz (37/71/fopen): adding to final database dump
+0014.718 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_aioseo_notifications.table.gz (38/71/fopen): adding to final database dump
+0014.723 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_aioseo_posts.table.tmpr13.gz (39/71/fopen): adding to final database dump
+0014.726 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_aioseo_posts.table.gz (40/71/fopen): adding to final database dump
+0014.730 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_auto_spinner_log.table.tmpr488.gz (41/71/fopen): adding to final database dump
+0014.734 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_auto_spinner_log.table.gz (42/71/fopen): adding to final database dump
+0014.738 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_amazon_links.table.tmpr0.gz (43/71/fopen): adding to final database dump
+0014.745 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_amazon_links.table.gz (44/71/fopen): adding to final database dump
+0014.748 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_articles_keys.table.tmpr0.gz (45/71/fopen): adding to final database dump
+0014.753 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_articles_keys.table.gz (46/71/fopen): adding to final database dump
+0014.758 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_articles_links.table.tmpr0.gz (47/71/fopen): adding to final database dump
+0014.764 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_articles_links.table.gz (48/71/fopen): adding to final database dump
+0014.768 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_cached.table.tmpr0.gz (49/71/fopen): adding to final database dump
+0014.771 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_cached.table.gz (50/71/fopen): adding to final database dump
+0014.775 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_camps.table.tmpr2851.gz (51/71/fopen): adding to final database dump
+0014.779 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_camps.table.gz (52/71/fopen): adding to final database dump
+0014.782 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_categories.table.tmpr1001.gz (53/71/fopen): adding to final database dump
+0014.785 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_categories.table.gz (54/71/fopen): adding to final database dump
+0014.788 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_clickbank_links.table.tmpr0.gz (55/71/fopen): adding to final database dump
+0014.793 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_clickbank_links.table.gz (56/71/fopen): adding to final database dump
+0014.798 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_general.table.tmpr0.gz (57/71/fopen): adding to final database dump
+0014.802 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_general.table.gz (58/71/fopen): adding to final database dump
+0014.807 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_keywords.table.tmpr0.gz (59/71/fopen): adding to final database dump
+0014.812 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_keywords.table.gz (60/71/fopen): adding to final database dump
+0014.817 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_links.table.tmpr0.gz (61/71/fopen): adding to final database dump
+0014.824 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_links.table.gz (62/71/fopen): adding to final database dump
+0014.829 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_log.table.tmpr1429.gz (63/71/fopen): adding to final database dump
+0014.835 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_log.table.gz (64/71/fopen): adding to final database dump
+0014.840 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_youtube_links.table.tmpr0.gz (65/71/fopen): adding to final database dump
+0014.844 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_automatic_youtube_links.table.gz (66/71/fopen): adding to final database dump
+0014.849 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_network_insights.table.tmpr0.gz (67/71/fopen): adding to final database dump
+0014.853 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_network_insights.table.gz (68/71/fopen): adding to final database dump
+0014.857 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts.table.tmpr283.gz (69/71/fopen): adding to final database dump
+0014.864 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts.table.gz (70/71/fopen): adding to final database dump
+0014.873 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_drafts.table.tmpr6.gz (71/71/fopen): adding to final database dump
+0014.889 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_drafts.table.gz (72/71/fopen): adding to final database dump
+0014.896 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_favorites.table.tmpr0.gz (73/71/fopen): adding to final database dump
+0014.901 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_favorites.table.gz (74/71/fopen): adding to final database dump
+0014.906 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_insights.table.tmpr0.gz (75/71/fopen): adding to final database dump
+0014.911 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_insights.table.gz (76/71/fopen): adding to final database dump
+0014.915 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_network_details.table.tmpr9.gz (77/71/fopen): adding to final database dump
+0014.919 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_network_details.table.gz (78/71/fopen): adding to final database dump
+0014.964 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_sched_details.table.tmpr0.gz (79/71/fopen): adding to final database dump
+0014.969 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_posts_sched_details.table.gz (80/71/fopen): adding to final database dump
+0014.980 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user.table.tmpr2.gz (81/71/fopen): adding to final database dump
+0014.984 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user.table.gz (82/71/fopen): adding to final database dump
+0014.990 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user_contact.table.tmpr0.gz (83/71/fopen): adding to final database dump
+0014.996 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user_contact.table.gz (84/71/fopen): adding to final database dump
+0015.004 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user_network_settings.table.tmpr0.gz (85/71/fopen): adding to final database dump
+0015.009 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user_network_settings.table.gz (86/71/fopen): adding to final database dump
+0015.013 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user_tool.table.tmpr0.gz (87/71/fopen): adding to final database dump
+0015.018 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_b2s_user_tool.table.gz (88/71/fopen): adding to final database dump
+0015.024 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_filters.table.tmpr0.gz (89/71/fopen): adding to final database dump
+0015.029 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_filters.table.gz (90/71/fopen): adding to final database dump
+0015.032 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_instances.table.tmpr4176.gz (91/71/fopen): adding to final database dump
+0015.038 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_instances.table.gz (92/71/fopen): adding to final database dump
+0015.049 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_links.table.tmpr876.gz (93/71/fopen): adding to final database dump
+0015.056 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_links.table.gz (94/71/fopen): adding to final database dump
+0015.061 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_synch.table.tmpr1001.gz (95/71/fopen): adding to final database dump
+0015.066 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_blc_synch.table.gz (96/71/fopen): adding to final database dump
+0015.070 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_e_events.table.tmpr0.gz (97/71/fopen): adding to final database dump
+0015.076 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_e_events.table.gz (98/71/fopen): adding to final database dump
+0015.081 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_fifu_invalid_media_su.table.tmpr0.gz (99/71/fopen): adding to final database dump
+0015.090 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_fifu_invalid_media_su.table.gz (100/71/fopen): adding to final database dump
+0015.096 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_fifu_meta_in.table.tmpr0.gz (101/71/fopen): adding to final database dump
+0015.100 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_fifu_meta_in.table.gz (102/71/fopen): adding to final database dump
+0015.105 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_fifu_meta_out.table.tmpr0.gz (103/71/fopen): adding to final database dump
+0015.112 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_fifu_meta_out.table.gz (104/71/fopen): adding to final database dump
+0015.115 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_litespeed_img_optm.table.tmpr126.gz (105/71/fopen): adding to final database dump
+0015.120 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_litespeed_img_optm.table.gz (106/71/fopen): adding to final database dump
+0015.125 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_litespeed_img_optming.table.tmpr0.gz (107/71/fopen): adding to final database dump
+0015.131 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_litespeed_img_optming.table.gz (108/71/fopen): adding to final database dump
+0015.135 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_loginizer_logs.table.tmpr1.gz (109/71/fopen): adding to final database dump
+0015.142 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_loginizer_logs.table.gz (110/71/fopen): adding to final database dump
+0015.148 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_404_logs.table.tmpr0.gz (111/71/fopen): adding to final database dump
+0015.154 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_404_logs.table.gz (112/71/fopen): adding to final database dump
+0015.159 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_analytics_objects.table.tmpr106.gz (113/71/fopen): adding to final database dump
+0015.166 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_analytics_objects.table.gz (114/71/fopen): adding to final database dump
+0015.170 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_internal_links.table.tmpr47715.gz (115/71/fopen): adding to final database dump
+0015.176 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_internal_links.table.gz (116/71/fopen): adding to final database dump
+0015.183 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_internal_meta.table.tmpr4285.gz (117/71/fopen): adding to final database dump
+0015.189 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_rank_math_internal_meta.table.gz (118/71/fopen): adding to final database dump
+0015.195 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_404.table.tmpr0.gz (119/71/fopen): adding to final database dump
+0015.200 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_404.table.gz (120/71/fopen): adding to final database dump
+0015.204 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_groups.table.tmpr3.gz (121/71/fopen): adding to final database dump
+0015.209 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_groups.table.gz (122/71/fopen): adding to final database dump
+0015.214 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_items.table.tmpr814.gz (123/71/fopen): adding to final database dump
+0015.220 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_items.table.gz (124/71/fopen): adding to final database dump
+0015.225 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_logs.table.tmpr0.gz (125/71/fopen): adding to final database dump
+0015.231 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_redirection_logs.table.gz (126/71/fopen): adding to final database dump
+0015.236 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_simply_static_pages.table.tmpr77639.gz (127/71/fopen): adding to final database dump
+0015.285 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_simply_static_pages.table.gz (128/71/fopen): adding to final database dump
+0015.290 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_smush_dir_images.table.tmpr0.gz (129/71/fopen): adding to final database dump
+0015.295 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_smush_dir_images.table.gz (130/71/fopen): adding to final database dump
+0015.300 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_wpforms_tasks_meta.table.tmpr4.gz (131/71/fopen): adding to final database dump
+0015.304 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_wpforms_tasks_meta.table.gz (132/71/fopen): adding to final database dump
+0015.308 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_indexable.table.tmpr0.gz (133/71/fopen): adding to final database dump
+0015.317 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_indexable.table.gz (134/71/fopen): adding to final database dump
+0015.320 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_indexable_hierarchy.table.tmpr1.gz (135/71/fopen): adding to final database dump
+0015.326 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_indexable_hierarchy.table.gz (136/71/fopen): adding to final database dump
+0015.331 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_migrations.table.tmpr17.gz (137/71/fopen): adding to final database dump
+0015.337 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_migrations.table.gz (138/71/fopen): adding to final database dump
+0015.341 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_primary_term.table.tmpr0.gz (139/71/fopen): adding to final database dump
+0015.347 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_primary_term.table.gz (140/71/fopen): adding to final database dump
+0015.350 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_seo_links.table.tmpr0.gz (141/71/fopen): adding to final database dump
+0015.355 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db-table-wp_yoast_seo_links.table.gz (142/71/fopen): adding to final database dump
+0015.487 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db.gz: finished writing out complete database file (3501 KB)
+0015.661 (0) Total database tables backed up: 71 (backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db.gz, size: 3585119, sha1: 5c4383ccdc4c6190049beb04bdce118ea2e4ffd4, sha256: d4ff01bd07110f5a05e49afcb0a1ea7f63320c67168dc770a5fac439e50eb660)
+0015.683 (0) backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db.gz: db: This file has not yet been successfully uploaded: will queue
+0015.688 (0) Saving backup history. Total backup size: 3.4 MB
+0015.701 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0015.722 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0015.727 (0) No remote despatch: user chose no remote backup service
+0015.731 (0) Recording as successfully uploaded: backup_2025-08-22-1029_Sarkari_Result_faa9e85f34a6-db.gz
+0015.739 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0015.744 (0) Resume backup (faa9e85f34a6, 0): finish run
+0015.756 (0) Decremented the semaphore (fd) by 1
+0015.767 (0) Semaphore (fd) unlocked
+0015.772 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0015.793 (0) No email will/can be sent - the user has not configured an email address.
+0015.798 (0) The backup succeeded and is now complete
